@@ -1,0 +1,15 @@
+@import 'src/colours';
+
+#SplashContainer {
+  position: fixed;
+  background-color: $LIGHT_BLUE;
+  height: 100vh;
+  #SplashImage {
+    width: 100vw;
+  }
+
+  #SplashText {
+    display: flex;
+    justify-content: center;
+  }
+}
