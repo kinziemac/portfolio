@@ -1,0 +1,51 @@
+body{margin:0;padding:0;font-family:sans-serif}#LandingHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  color: #000080;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
+  padding-right: 100px; }
+  #LandingHeader .SectionHeading p {
+    margin: 0 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer; }
+    #LandingHeader .SectionHeading p:hover {
+      color: #7f7fbf; }
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#LandingContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: black; }
+  #LandingContainer h1 {
+    margin: 0; }
+  #LandingContainer .LandingSection, #LandingContainer .SplashLanding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #23395b;
+    height: 90vh; }
+  #LandingContainer .SplashLanding {
+    background-image: url(/static/media/SplashImage.3478a44f.jpg);
+    background-size: cover;
+    background-color: black;
+    color: darkBlue; }
+  #LandingContainer .LandingSeperation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 20vh; }
+.App{text-align:center}.App-logo{-webkit-animation:App-logo-spin infinite 20s linear;animation:App-logo-spin infinite 20s linear;height:80px}.App-header{background-color:#000;height:150px;padding:20px;color:#fff}.App-intro{font-size:large}@-webkit-keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.3057d48d.css.map*/
