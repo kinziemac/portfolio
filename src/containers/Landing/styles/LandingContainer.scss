@@ -13,10 +13,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //background: linear-gradient(#e66465, white);
     color: white;
     background-color: #23395b;
-    height: 90vh;
+    height: 92vh;
   }
 
   .SplashLanding {
@@ -43,15 +42,16 @@
     border-top-style: solid;
     border-color: black;
     border-width: 1px;
+    box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
 
     .ImageHolder {
       padding: 13%;
       // min-width: 290px;
       // min-height: 290px;
-      background-color: darkBlue;
+      background-color: black;
       border-style: solid;
-      border-color: darkBlue;
-      border-width: 3px;
+      border-color: black;
+      border-width: 2px;
       border-radius: 50%;
       background-image: url('../../../images/mackenzie.png');
       background-size: cover;
@@ -64,11 +64,25 @@
   .AboutSection {
     @extend .LandingSection;
     background-image: url('../../../images/AboutImage.jpg');
+  }
+
+  .ProjectsSection {
+    @extend .LandingSection;
+    justify-content: space-around;
+    background-image: url('../../../images/ProjectsImage.jpg');
     background-size: cover;
-    background-color: black;
-    &:after {
-      opacity: 0.8;
+
+    .Project {
+      height: 45vh;
+      width: 35vh;
+      background-color: white;
     }
+  }
+
+  .FooterSection {
+    @extend .LandingSeperation;
+    height: 20vh;
+    background-color: #282c34;
   }
 }
 

@@ -15,12 +15,27 @@ export default class LandingContainer extends Component {
     return (
       <div id="LandingContainer">
         <LandingHeader onScroll={this.handleScroll.bind(this)} />
-        <div className="SplashLanding" id="Home" />
+        <div className="SplashLanding" id="HOME" />
         <div className="LandingSeperation">
           <div className="ImageHolder" />
           {/*LoadingLines />*/}
         </div>
-        <div className="AboutSection" id="About" />
+        <div className="AboutSection" id="ABOUT" />
+        <div className="LandingSeperation" />
+        <div className="ProjectsSection" id="PROJECTS">
+          <div className="Project">
+            <p>Project 1</p>
+          </div>
+          <div className="Project">
+            <p>Project 2</p>
+          </div>
+          <div className="Project">
+            <p>Project 3</p>
+          </div>
+          <div className="Project">
+            <p>Project 4</p>
+          </div>
+        </div>
       </div>
     );
   }

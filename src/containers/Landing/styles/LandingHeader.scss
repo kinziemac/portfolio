@@ -1,3 +1,5 @@
+@import url('https://fonts.google.com/specimen/Roboto?selection.family=Roboto');
+
 #LandingHeader {
   display: flex;
   justify-content: flex-end;
@@ -6,22 +8,81 @@
   color: #000080;
   position: fixed;
   top: 0;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
   padding-right: 100px;
   z-index: 5;
 
-  .SectionHeading {
-    p {
-      margin: 0 10px;
-      font-size: 1.25em;
-      font-weight: bold;
-      cursor: pointer;
+  #LandingHeaderInner {
+    height: 100%;
+    weight: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: fadein 1s;
+
+    .SectionHeading {
+      padding: 10px 25px;
+      margin: 0 15px;
+      background-color: white;
+      animation: offHover 0.3s;
 
       &:hover {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        animation: onHover 0.3s;
+      }
+      p {
         color: #7f7fbf;
+        margin: 0;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+
+        &:hover {
+          color: #2f4f4f;
+        }
+
+        &:active {
+          color: black;
+        }
       }
     }
+
+    .Selected {
+      p {
+        color: #2f4f4f;
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes onHover {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #f5f5f5;
+  }
+}
+
+@keyframes offHover {
+  from {
+    background-color: #f5f5f5;
+  }
+  to {
+    background-color: white;
   }
 }

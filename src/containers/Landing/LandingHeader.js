@@ -7,21 +7,38 @@ export default class LandingHeader extends Component {
     onScroll: func
   };
 
-  handleOnScroll(section) {
-    this.props.onScroll(section);
+  state = {
+    selectedHeading: 'HOME'
+  };
+
+  handleSelectSection(section) {
+    this.setState({ selectedHeading: section }, () => {
+      this.props.onScroll(section);
+    });
   }
 
   render() {
-    const sections = ['Home', 'About', 'Projects', 'Extra'];
+    const sections = ['HOME', 'ABOUT', 'PROJECTS', 'EXTRA'];
+    const { selectedHeading } = this.state;
     return (
       <div id="LandingHeader">
-        {sections.map(section => {
-          return (
-            <div className="SectionHeading" key={section}>
-              <p onClick={this.handleOnScroll.bind(this, section)}>{section}</p>
-            </div>
-          );
-        })}
+        <div id="LandingHeaderInner">
+          {sections.map(section => {
+            return (
+              <div
+                className={
+                  selectedHeading === section
+                    ? 'SectionHeading Selected'
+                    : 'SectionHeading'
+                }
+                key={section}>
+                <p onClick={this.handleSelectSection.bind(this, section)}>
+                  {section}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }
