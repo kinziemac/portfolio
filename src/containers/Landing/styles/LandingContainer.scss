@@ -1,14 +1,5 @@
 @import 'src/colours';
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 #LandingContainer {
   display: flex;
   flex-direction: column;
@@ -33,16 +24,57 @@
     background-image: url('../../../images/SplashImage.jpg');
     background-size: cover;
     background-color: black;
-    color: darkBlue;
+    color: black;
     animation: fadein 2s;
+    height: 70vh;
+
+    &:after {
+      opacity: 0.8;
+    }
   }
 
   .LandingSeperation {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 10px;
     background-color: white;
-    height: 20vh;
-    animation: fadein 2s;
+    height: 40vh;
+
+    .ImageHolder {
+      padding: 13%;
+      // min-width: 290px;
+      // min-height: 290px;
+      background-color: darkBlue;
+      border-style: solid;
+      border-color: darkBlue;
+      border-width: 3px;
+      border-radius: 50%;
+      background-image: url('../../../images/mackenzie.png');
+      background-size: cover;
+      position: absolute;
+      right: 10%;
+      bottom: 3%;
+    }
+  }
+
+  .AboutSection {
+    @extend .LandingSection;
+    background-image: url('../../../images/AboutImage.jpg');
+    background-size: cover;
+    background-color: black;
+    &:after {
+      opacity: 0.8;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

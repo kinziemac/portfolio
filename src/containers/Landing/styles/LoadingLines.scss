@@ -1,0 +1,68 @@
+#LoadingLinesContainer {
+  #ScrollingLines {
+    .TopLoading {
+      height: 30px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      background-color: darkBlue;
+      animation: expand-500 1.5s linear forwards;
+    }
+
+    .MiddleLoading {
+      @extend .TopLoading;
+      background-color: #b8336a;
+      margin-left: 40px;
+      animation: expand-350 1.2s linear forwards;
+    }
+
+    .CenterLoading {
+      @extend .TopLoading;
+      background-color: #17bebb;
+      margin-left: 70px;
+      animation: expand-150 1s linear forwards;
+    }
+
+    .BottomLoading {
+      @extend .TopLoading;
+      background-color: #edb88b;
+      margin-left: 100px;
+      animation: expand-250 1s linear forwards;
+    }
+  }
+}
+
+@keyframes expand-150 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 220px;
+  }
+}
+
+@keyframes expand-250 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+@keyframes expand-350 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+@keyframes expand-500 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 500px;
+  }
+}

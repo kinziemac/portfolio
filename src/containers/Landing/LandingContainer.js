@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import LandingHeader from './LandingHeader';
+//import LoadingLines from './LoadingLines';
 import './styles/LandingContainer.scss';
 
 export default class LandingContainer extends Component {
@@ -14,15 +15,12 @@ export default class LandingContainer extends Component {
     return (
       <div id="LandingContainer">
         <LandingHeader onScroll={this.handleScroll.bind(this)} />
-        <div className="SplashLanding" id="Home">
-          <h1>Mackenzie Higa</h1>
-        </div>
+        <div className="SplashLanding" id="Home" />
         <div className="LandingSeperation">
-          <h1>Middle</h1>
+          <div className="ImageHolder" />
+          {/*LoadingLines />*/}
         </div>
-        <div className="LandingSection" id="About">
-          <h1>Body</h1>
-        </div>
+        <div className="AboutSection" id="About" />
       </div>
     );
   }
