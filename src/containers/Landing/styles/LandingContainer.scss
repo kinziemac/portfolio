@@ -1,0 +1,46 @@
+@import 'src/colours';
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#LandingContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+
+  h1 {
+    margin: 0;
+  }
+
+  .LandingSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background: linear-gradient(#e66465, white);
+    color: white;
+    background-color: #23395b;
+    height: 90vh;
+  }
+
+  .SplashLanding {
+    @extend .LandingSection;
+    background-image: url('../../../images/SplashImage.jpg');
+    background-size: cover;
+    background-color: black;
+    color: darkBlue;
+  }
+
+  .LandingSeperation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 20vh;
+  }
+}

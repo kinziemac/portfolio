@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { SplashContainer } from 'containers/Splash'
-import './styles/App.css'
+import React, { Component } from 'react';
+import { LandingContainer } from 'containers/Landing';
+import './styles/App.css';
 
 class App extends Component {
   render() {
-    return <SplashContainer />
+    return <LandingContainer />;
   }
 }
 
-export default App
+export default App;

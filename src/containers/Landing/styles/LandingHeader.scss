@@ -1,0 +1,26 @@
+#LandingHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  color: #000080;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
+  padding-right: 100px;
+
+  .SectionHeading {
+    p {
+      margin: 0 10px;
+      font-size: 1.25em;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        color: #7f7fbf;
+      }
+    }
+  }
+}
