@@ -16,7 +16,7 @@ Platform:
 npm manifest: 
   {
     "name": "portfolio",
-    "homepage": "https://kinziemac.github.io/portfolio",
+    "homepage": "http://mackenziehiga.com/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -75,12 +75,8 @@ npm manifest:
       "style-loader": "^0.18.2"
     },
     "jest": {
-      "collectCoverageFrom": [
-        "src/**/*.{js,jsx}"
-      ],
-      "setupFiles": [
-        "<rootDir>/config/polyfills.js"
-      ],
+      "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+      "setupFiles": ["<rootDir>/config/polyfills.js"],
       "testMatch": [
         "<rootDir>/src/**/__tests__/**/*.js?(x)",
         "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
@@ -92,25 +88,14 @@ npm manifest:
         "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
         "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
       },
-      "transformIgnorePatterns": [
-        "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-      ],
+      "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
       "moduleNameMapper": {
         "^react-native$": "react-native-web"
       },
-      "moduleFileExtensions": [
-        "web.js",
-        "js",
-        "json",
-        "web.jsx",
-        "jsx",
-        "node"
-      ]
+      "moduleFileExtensions": ["web.js", "js", "json", "web.jsx", "jsx", "node"]
     },
     "babel": {
-      "presets": [
-        "react-app"
-      ]
+      "presets": ["react-app"]
     },
     "eslintConfig": {
       "extends": "react-app"
@@ -5809,7 +5794,7 @@ Lockfile:
     dependencies:
       asap "~2.0.3"
   
-  prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.6.0:
+  prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.1:
     version "15.6.1"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
     dependencies:
@@ -7674,4 +7659,4 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: EACCES: permission denied, mkdir '/Users/mackenziehiga/Mackenzie/projects/portfolio/node_modules/autoprefixer/node_modules/has-flag'
+  Error: EACCES: permission denied, unlink '/Users/mackenziehiga/Mackenzie/projects/portfolio/node_modules/.bin/acorn'
