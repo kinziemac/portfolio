@@ -20,11 +20,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    animation: fadein 1s;
+    animation: fadein 0.3;
 
     .SectionHeading {
-      padding: 10px 25px;
-      margin: 0 15px;
+      padding: 10px 20px;
+      margin: 0 5px;
       background-color: white;
       animation: offHover 0.3s;
 
@@ -33,14 +33,20 @@
         border-radius: 4px;
         animation: onHover 0.3s;
       }
+
+      &:active {
+        background-color: #dcdcdc;
+      }
+
       p {
         color: #7f7fbf;
         margin: 0;
-        font-size: 0.8em;
+        font-size: 0.7em;
         letter-spacing: 2px;
         font-weight: bold;
         cursor: pointer;
         font-family: 'Roboto', sans-serif;
+        user-select: none;
 
         &:hover {
           color: #2f4f4f;

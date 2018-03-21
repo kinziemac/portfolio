@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import LandingHeader from './LandingHeader';
+import ProjectWidget from './ProjectWidget';
 //import LoadingLines from './LoadingLines';
 import './styles/LandingContainer.scss';
 
@@ -12,6 +13,11 @@ export default class LandingContainer extends Component {
   }
 
   render() {
+    const projects = [];
+    for (let i = 0; i < 4; i++) {
+      projects.push(i);
+    }
+
     return (
       <div id="LandingContainer">
         <LandingHeader onScroll={this.handleScroll.bind(this)} />
@@ -23,18 +29,9 @@ export default class LandingContainer extends Component {
         <div className="AboutSection" id="ABOUT" />
         <div className="LandingSeperation" />
         <div className="ProjectsSection" id="PROJECTS">
-          <div className="Project">
-            <p>Project 1</p>
-          </div>
-          <div className="Project">
-            <p>Project 2</p>
-          </div>
-          <div className="Project">
-            <p>Project 3</p>
-          </div>
-          <div className="Project">
-            <p>Project 4</p>
-          </div>
+          {projects.map(project => {
+            return <ProjectWidget projectNumber={project} key={project} />;
+          })}
         </div>
       </div>
     );
