@@ -7,10 +7,15 @@ export default class ProjectWidget extends Component {
     const { projectNumber } = this.props;
 
     return (
-      <div className="Project">
-        <div className="ProjectImage" />
-        <p>PROJECT {projectNumber}</p>
-      </div>
+      <a
+        href="https://github.com/kinziemac/netflixextension"
+        target="_blank"
+        rel="noopener noreferrer">
+        <div className="Project">
+          <div className="ProjectImage" />
+          <p>PROJECT {projectNumber}</p>
+        </div>
+      </a>
     );
   }
 }

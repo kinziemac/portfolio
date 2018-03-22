@@ -9,26 +9,41 @@
     margin: 0;
   }
 
-  .LandingSection {
+  .TopicSection {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
     color: white;
     background-color: #23395b;
     height: 92vh;
+
+    h2 {
+      color: white;
+      margin: 20px;
+      letter-spacing: 3px;
+      font-size: 2em;
+    }
   }
 
   .SplashLanding {
-    @extend .LandingSection;
+    @extend .TopicSection;
+    margin-top: 8vh;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-attachment: fixed;
     background-image: url('../../../images/SplashImage.jpg');
     background-size: cover;
     background-color: black;
     color: black;
-    animation: fadein 2s;
-    height: 70vh;
+    height: 55vh;
     box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
     opacity: 0.8;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    -ms-transition: fadein 2s;
+    animation: fadein 2s;
   }
 
   .LandingSeperation {
@@ -38,7 +53,7 @@
     align-items: flex-start;
     padding: 10px 10px;
     background-color: white;
-    height: 40vh;
+    height: 35vh;
     border-top-style: solid;
     border-color: black;
     border-width: 1px;
@@ -58,19 +73,38 @@
       position: absolute;
       right: 10%;
       bottom: 3%;
+      -webkit-animation: colourChange 1s;
+      -moz-animation: colourChange 1s;
+      -o-animation: colourChange 1s;
+      -ms-transition: colourChange 1s;
+      animation: colourChange 1s;
     }
   }
 
   .AboutSection {
-    @extend .LandingSection;
+    @extend .TopicSection;
     background-image: url('../../../images/AboutImage.jpg');
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .ProjectsSection {
-    @extend .LandingSection;
-    justify-content: space-around;
+    @extend .TopicSection;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     background-image: url('../../../images/ProjectsImage.jpg');
     background-size: cover;
+
+    .ProjectContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .FooterSection {
@@ -86,5 +120,14 @@
   }
   to {
     opacity: 0.8;
+  }
+}
+
+@keyframes colourChange {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
   }
 }

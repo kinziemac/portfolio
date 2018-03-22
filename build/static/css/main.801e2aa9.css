@@ -1,0 +1,155 @@
+@import url(https://fonts.google.com/specimen/Roboto?selection.family=Roboto);@import url(https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed);body{margin:0;padding:0;font-family:sans-serif}#LandingHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  color: #000080;
+  position: fixed;
+  top: 0;
+  height: 8vh;
+  width: 100%;
+  box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
+  padding-right: 100px;
+  z-index: 5; }
+  #LandingHeader #LandingHeaderInner {
+    height: 100%;
+    weight: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: fadein 0.3; }
+    #LandingHeader #LandingHeaderInner .SectionHeading {
+      padding: 10px 20px;
+      margin: 0 5px;
+      background-color: white;
+      animation: offHover 0.3s; }
+      #LandingHeader #LandingHeaderInner .SectionHeading:hover {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        animation: onHover 0.3s; }
+      #LandingHeader #LandingHeaderInner .SectionHeading:active {
+        background-color: #dcdcdc; }
+      #LandingHeader #LandingHeaderInner .SectionHeading p {
+        color: #7f7fbf;
+        margin: 0;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        user-select: none; }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:hover {
+          color: #2f4f4f; }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:active {
+          color: black; }
+    #LandingHeader #LandingHeaderInner .Selected p {
+      color: #2f4f4f; }
+
+@keyframes fadein {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
+@keyframes onHover {
+  from {
+    background-color: white; }
+  to {
+    background-color: #f5f5f5; } }
+
+@keyframes offHover {
+  from {
+    background-color: #f5f5f5; }
+  to {
+    background-color: white; } }
+.Project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  height: 45vh;
+  width: 35vh;
+  background-color: #282c34;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+  .Project:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.32); }
+  .Project p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 2px; }
+  .Project .ProjectImage {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 85%; }
+#LandingContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: black; }
+  #LandingContainer h1 {
+    margin: 0; }
+  #LandingContainer .LandingSection, #LandingContainer .SplashLanding, #LandingContainer .AboutSection, #LandingContainer .ProjectsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #23395b;
+    height: 92vh; }
+  #LandingContainer .SplashLanding {
+    background-attachment: fixed;
+    background-image: url(/static/media/SplashImage.3478a44f.jpg);
+    background-size: cover;
+    background-color: black;
+    color: black;
+    animation: fadein 2s;
+    height: 70vh;
+    box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
+    opacity: 0.8; }
+  #LandingContainer .LandingSeperation, #LandingContainer .FooterSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 10px;
+    background-color: white;
+    height: 40vh;
+    border-top-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75); }
+    #LandingContainer .LandingSeperation .ImageHolder, #LandingContainer .FooterSection .ImageHolder {
+      padding: 13%;
+      background-color: black;
+      border-style: solid;
+      border-color: black;
+      border-width: 2px;
+      border-radius: 50%;
+      background-image: url(/static/media/mackenzie.8c49eed2.png);
+      background-size: cover;
+      position: absolute;
+      right: 10%;
+      bottom: 3%; }
+  #LandingContainer .AboutSection {
+    background-image: url(/static/media/AboutImage.4b4c1681.jpg); }
+  #LandingContainer .ProjectsSection {
+    justify-content: space-around;
+    background-image: url(/static/media/ProjectsImage.0b9398c3.jpg);
+    background-size: cover; }
+  #LandingContainer .FooterSection {
+    height: 20vh;
+    background-color: #282c34; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.8; } }
+.App{text-align:center;background-color:#000}.App-logo{-webkit-animation:App-logo-spin infinite 20s linear;animation:App-logo-spin infinite 20s linear;height:80px}.App-header{background-color:#000;height:150px;padding:20px;color:#fff}.App-intro{font-size:large}@-webkit-keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.801e2aa9.css.map*/

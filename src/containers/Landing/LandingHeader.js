@@ -31,10 +31,9 @@ export default class LandingHeader extends Component {
                     ? 'SectionHeading Selected'
                     : 'SectionHeading'
                 }
-                key={section}>
-                <p onClick={this.handleSelectSection.bind(this, section)}>
-                  {section}
-                </p>
+                key={section}
+                onClick={this.handleSelectSection.bind(this, section)}>
+                <p>{section}</p>
               </div>
             );
           })}
