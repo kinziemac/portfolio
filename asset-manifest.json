@@ -1,10 +1,11 @@
 {
-  "main.css": "static/css/main.801e2aa9.css",
-  "main.css.map": "static/css/main.801e2aa9.css.map",
-  "main.js": "static/js/main.9b3efdda.js",
-  "main.js.map": "static/js/main.9b3efdda.js.map",
-  "static/media/AboutImage.jpg": "static/media/AboutImage.4b4c1681.jpg",
-  "static/media/ProjectsImage.jpg": "static/media/ProjectsImage.0b9398c3.jpg",
+  "main.css": "static/css/main.0889d475.css",
+  "main.css.map": "static/css/main.0889d475.css.map",
+  "main.js": "static/js/main.a7f55046.js",
+  "main.js.map": "static/js/main.a7f55046.js.map",
+  "static/media/AboutImage.jpg": "static/media/AboutImage.511b0636.jpg",
+  "static/media/FlixFinder.png": "static/media/FlixFinder.f56d8e1c.png",
+  "static/media/ProjectsImage.jpg": "static/media/ProjectsImage.584140dd.jpg",
   "static/media/SplashImage.jpg": "static/media/SplashImage.3478a44f.jpg",
   "static/media/mackenzie.png": "static/media/mackenzie.8c49eed2.png"
 }
