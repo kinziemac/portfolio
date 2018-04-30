@@ -29,14 +29,28 @@
     color: white;
     font-size: 0.8em;
     letter-spacing: 2px;
+    margin: 0;
   }
 
   .ProjectImage {
     background-color: white;
-    background-image: url('../../../images/FlixFinder.png');
     background-size: cover;
     border-radius: 5px;
     width: 100%;
     height: 85%;
+    margin-bottom: 8px;
+  }
+
+  .netflixextension {
+    background-image: url('../../../images/FlixFinder.png');
+  }
+
+  .ClarityHierarchy {
+    background-image: url('../../../images/ClarityHierarchy.png');
+  }
+
+  .sti-imaging {
+    background-image: url('../../../images/STI-Imaging.png');
+    background-position: right -11px top;
   }
 }

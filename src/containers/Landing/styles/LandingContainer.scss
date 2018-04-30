@@ -23,6 +23,7 @@
       margin: 20px;
       letter-spacing: 3px;
       font-size: 2em;
+      user-select: none;
     }
   }
 
@@ -59,6 +60,18 @@
     border-width: 1px;
     box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
 
+    h2 {
+      color: #a9a9a9;
+      margin: 20px;
+      letter-spacing: 3px;
+      font-size: 2em;
+      user-select: none;
+    }
+
+    p {
+      margin: 10px;
+    }
+
     .ImageHolder {
       padding: 13%;
       // min-width: 290px;
@@ -66,7 +79,7 @@
       background-color: black;
       border-style: solid;
       border-color: black;
-      border-width: 2px;
+      border-width: 1px;
       border-radius: 50%;
       background-image: url('../../../images/mackenzie.png');
       background-size: cover;
@@ -79,10 +92,33 @@
       -ms-transition: colourChange 1s;
       animation: colourChange 1s;
     }
+
+    .Slider {
+      h2 {
+        color: black;
+        margin: 10px;
+        -webkit-animation: fadein 1s;
+        -moz-animation: fadein 1s;
+        -o-animation: fadein 1s;
+        -ms-transition: fadein 1s;
+        animation: fadein 1s;
+      }
+
+      p {
+        width: 100%;
+        overflow: hidden;
+        -webkit-animation: slide-left 3s, fadein 5s;
+        -moz-animation: slide-left 3s, fadein 5s;
+        -o-animation: slide-left 3s, fadein 5s;
+        -ms-transition: slide-left 3s, fadein 5s;
+        animation: slide-left 3s, fadein 5s;
+      }
+    }
   }
 
   .AboutSection {
     @extend .TopicSection;
+    height: 65vh;
     background-image: url('../../../images/AboutImage.jpg');
     flex-direction: column;
     justify-content: flex-start;
@@ -111,6 +147,16 @@
     @extend .LandingSeperation;
     height: 20vh;
     background-color: #282c34;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 20%;
+  }
+
+  to {
+    margin-left: 10px;
   }
 }
 

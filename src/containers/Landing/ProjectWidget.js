@@ -4,16 +4,25 @@ import './styles/ProjectWidget.scss';
 
 export default class ProjectWidget extends Component {
   render() {
-    const { projectNumber } = this.props;
+    const { project } = this.props;
+    let projectName = project.name;
+    if (project.name === 'FlixFinder') {
+      projectName = 'netflixextension';
+    } else if (project.name === 'Clarity') {
+      projectName = 'ClarityHierarchy';
+    } else if (project.name === 'STI-Imaging') {
+      projectName = 'sti-imaging';
+    }
 
     return (
       <a
-        href="https://github.com/kinziemac/netflixextension"
+        href={`https://github.com/kinziemac/${projectName}`}
         target="_blank"
         rel="noopener noreferrer">
         <div className="Project">
-          <div className="ProjectImage" />
-          <p>PROJECT {projectNumber}</p>
+          <div className={`ProjectImage ${projectName}`} />
+          <p>{project.name.toUpperCase()}</p>
+          <p>{project.platform}</p>
         </div>
       </a>
     );

@@ -13,10 +13,11 @@ export default class LandingContainer extends Component {
   }
 
   render() {
-    const projects = [];
-    for (let i = 0; i < 4; i++) {
-      projects.push(i);
-    }
+    const projects = [
+      { id: 1, name: 'FlixFinder', platform: 'Chrome Extension' },
+      { id: 2, name: 'STI-Imaging', platform: 'Java Application' },
+      { id: 3, name: 'Clarity', platform: 'iPhone App' }
+    ];
 
     return (
       <div id="LandingContainer">
@@ -26,17 +27,19 @@ export default class LandingContainer extends Component {
         </div>
         <div className="LandingSeperation">
           <div className="ImageHolder" />
-          {/*LoadingLines />*/}
+          <div className="Slider">
+            <h2>MACKENZIE HIGA</h2>
+            <p>
+              Web Developer and Fourth Year CS Student at Simon Fraser
+              University
+            </p>
+          </div>
         </div>
-        <div className="AboutSection" id="ABOUT">
-          <h2>ABOUT</h2>
-        </div>
-        <div className="LandingSeperation" />
         <div className="ProjectsSection" id="PROJECTS">
           <h2>PROJECTS</h2>
           <div className="ProjectContainer">
             {projects.map(project => {
-              return <ProjectWidget projectNumber={project} key={project} />;
+              return <ProjectWidget project={project} key={project.id} />;
             })}
           </div>
         </div>
