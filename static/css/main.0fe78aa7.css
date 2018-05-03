@@ -101,14 +101,22 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 0.8em;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin: 0; }
   .Project .ProjectImage {
     background-color: white;
-    background-image: url(/static/media/FlixFinder.f56d8e1c.png);
     background-size: cover;
     border-radius: 5px;
     width: 100%;
-    height: 85%; }
+    height: 85%;
+    margin-bottom: 8px; }
+  .Project .netflixextension {
+    background-image: url(/static/media/FlixFinder.f56d8e1c.png); }
+  .Project .ClarityHierarchy {
+    background-image: url(/static/media/ClarityHierarchy.873c3b8a.png); }
+  .Project .sti-imaging {
+    background-image: url(/static/media/STI-Imaging.4176dd41.png);
+    background-position: right -11px top; }
 #LandingContainer {
   display: flex;
   flex-direction: column;
@@ -127,7 +135,8 @@
       color: white;
       margin: 20px;
       letter-spacing: 3px;
-      font-size: 2em; }
+      font-size: 2em;
+      user-select: none; }
   #LandingContainer .SplashLanding {
     margin-top: 8vh;
     justify-content: flex-start;
@@ -157,12 +166,20 @@
     border-color: black;
     border-width: 1px;
     box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75); }
+    #LandingContainer .LandingSeperation h2, #LandingContainer .FooterSection h2 {
+      color: #a9a9a9;
+      margin: 20px;
+      letter-spacing: 3px;
+      font-size: 2em;
+      user-select: none; }
+    #LandingContainer .LandingSeperation p, #LandingContainer .FooterSection p {
+      margin: 10px; }
     #LandingContainer .LandingSeperation .ImageHolder, #LandingContainer .FooterSection .ImageHolder {
       padding: 13%;
       background-color: black;
       border-style: solid;
       border-color: black;
-      border-width: 2px;
+      border-width: 1px;
       border-radius: 50%;
       background-image: url(/static/media/mackenzie.8c49eed2.png);
       background-size: cover;
@@ -174,7 +191,24 @@
       -o-animation: colourChange 1s;
       -ms-transition: colourChange 1s;
       animation: colourChange 1s; }
+    #LandingContainer .LandingSeperation .Slider h2, #LandingContainer .FooterSection .Slider h2 {
+      color: black;
+      margin: 10px;
+      -webkit-animation: fadein 1s;
+      -moz-animation: fadein 1s;
+      -o-animation: fadein 1s;
+      -ms-transition: fadein 1s;
+      animation: fadein 1s; }
+    #LandingContainer .LandingSeperation .Slider p, #LandingContainer .FooterSection .Slider p {
+      width: 100%;
+      overflow: hidden;
+      -webkit-animation: slide-left 3s, fadein 5s;
+      -moz-animation: slide-left 3s, fadein 5s;
+      -o-animation: slide-left 3s, fadein 5s;
+      -ms-transition: slide-left 3s, fadein 5s;
+      animation: slide-left 3s, fadein 5s; }
   #LandingContainer .AboutSection {
+    height: 65vh;
     background-image: url(/static/media/AboutImage.511b0636.jpg);
     flex-direction: column;
     justify-content: flex-start;
@@ -196,6 +230,12 @@
     height: 20vh;
     background-color: #282c34; }
 
+@keyframes slide-left {
+  from {
+    margin-left: 20%; }
+  to {
+    margin-left: 10px; } }
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -208,4 +248,4 @@
   to {
     background-color: black; } }
 .App{text-align:center;background-color:#000}.App-logo{-webkit-animation:App-logo-spin infinite 20s linear;animation:App-logo-spin infinite 20s linear;height:80px}.App-header{background-color:#000;height:150px;padding:20px;color:#fff}.App-intro{font-size:large}@-webkit-keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
-/*# sourceMappingURL=main.0889d475.css.map*/
+/*# sourceMappingURL=main.0fe78aa7.css.map*/
