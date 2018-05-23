@@ -23,10 +23,13 @@ export default class LandingContainer extends Component {
       <div id="LandingContainer">
         <LandingHeader onScroll={this.handleScroll.bind(this)} />
         <div className="SplashLanding" id="HOME">
-          <h2>HOME</h2>
+          <p>
+            <b>Mackenzie</b>
+          </p>
+          <p>Higa</p>
         </div>
         <div className="LandingSeperation">
-          <div className="ImageHolder" />
+          {/*<div className="ImageHolder" />*/}
           <div className="Slider">
             <h2>MACKENZIE HIGA</h2>
             <p>
@@ -36,7 +39,6 @@ export default class LandingContainer extends Component {
           </div>
         </div>
         <div className="ProjectsSection" id="PROJECTS">
-          <h2>PROJECTS</h2>
           <div className="ProjectContainer">
             {projects.map(project => {
               return <ProjectWidget project={project} key={project.id} />;

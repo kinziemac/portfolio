@@ -1,11 +1,13 @@
 {
-  "main.css": "static/css/main.0889d475.css",
-  "main.css.map": "static/css/main.0889d475.css.map",
-  "main.js": "static/js/main.a7f55046.js",
-  "main.js.map": "static/js/main.a7f55046.js.map",
+  "main.css": "static/css/main.0fe78aa7.css",
+  "main.css.map": "static/css/main.0fe78aa7.css.map",
+  "main.js": "static/js/main.5e133699.js",
+  "main.js.map": "static/js/main.5e133699.js.map",
   "static/media/AboutImage.jpg": "static/media/AboutImage.511b0636.jpg",
+  "static/media/ClarityHierarchy.png": "static/media/ClarityHierarchy.873c3b8a.png",
   "static/media/FlixFinder.png": "static/media/FlixFinder.f56d8e1c.png",
   "static/media/ProjectsImage.jpg": "static/media/ProjectsImage.584140dd.jpg",
+  "static/media/STI-Imaging.png": "static/media/STI-Imaging.4176dd41.png",
   "static/media/SplashImage.jpg": "static/media/SplashImage.3478a44f.jpg",
   "static/media/mackenzie.png": "static/media/mackenzie.8c49eed2.png"
 }
