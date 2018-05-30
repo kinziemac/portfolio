@@ -26,14 +26,12 @@ export default class LandingHeader extends Component {
           {sections.map(section => {
             return (
               <div
-                className={
-                  selectedHeading === section
-                    ? 'SectionHeading Selected'
-                    : 'SectionHeading'
-                }
+                className="SectionHeading"
                 key={section}
                 onClick={this.handleSelectSection.bind(this, section)}>
-                <p>{section}</p>
+                <p>
+                  <b>{section}</b>
+                </p>
               </div>
             );
           })}
