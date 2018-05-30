@@ -27,15 +27,20 @@ export default class LandingContainer extends Component {
             <b>Mackenzie</b>
           </p>
           <p>Higa</p>
+          <div className="FadeToWhiteBottom" />
         </div>
         <div className="LandingSeperation">
-          {/*<div className="ImageHolder" />*/}
-          <div className="Slider">
-            <h2>MACKENZIE HIGA</h2>
-            <p>
-              Web Developer and Fourth Year CS Student at Simon Fraser
-              University
-            </p>
+          <div className="WhiteBlock" />
+          <div className="LandingAbout">
+            <img
+              className="DeerImage"
+              src={require('../../images/ProjectsImageSide.jpg')}
+            />
+            <div>
+              <p>
+                <b>About</b>
+              </p>
+            </div>
           </div>
         </div>
         <div className="ProjectsSection" id="PROJECTS">

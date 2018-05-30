@@ -4,6 +4,11 @@
   display: flex;
   flex-direction: column;
   background-color: black;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-transition: fadein 2s;
+  animation: fadein 2s;
 
   h1 {
     margin: 0;
@@ -16,7 +21,7 @@
     background-repeat: no-repeat;
     color: white;
     background-color: #23395b;
-    height: 92vh;
+    height: 100vh;
 
     h2 {
       color: white;
@@ -29,26 +34,72 @@
 
   .SplashLanding {
     @extend .TopicSection;
-    justify-content: center;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-start;
-    background-attachment: fixed;
     background-image: url('../../../images/SplashImage.jpg');
     background-size: cover;
-    background-color: black;
     color: black;
     height: 100vh;
-    padding-left: 30px;
-    -webkit-animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -o-animation: fadein 2s;
-    -ms-transition: fadein 2s;
-    animation: fadein 2s;
 
     p {
       font-size: 4em;
       margin: 0;
+      margin-left: 20px;
+      padding: 0;
+      width: 80%;
+      overflow: hidden;
+      -webkit-animation: slide-left 3s, fadein 3s;
+      -moz-animation: slide-left 3s, fadein 3s;
+      -o-animation: slide-left 3s, fadein 3s;
+      -ms-transition: slide-left 3s, fadein 3s;
+      animation: slide-left 3s, fadein 3s;
+      -webkit-user-select: none; /* Chrome all / Safari all */
+      -moz-user-select: none; /* Firefox all */
+      -ms-user-select: none; /* IE 10+ */
+      user-select: none;
     }
+  }
+
+  .FadeToWhiteBottom {
+    height: 20vh;
+    margin-top: 20vh;
+    width: 100%;
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  .FadeToWhiteTop {
+    height: 50vh;
+    width: 100%;
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(108, 100, 139, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(108, 100, 139, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(108, 100, 139, 1) 100%
+    );
   }
 
   .LandingSeperation {
@@ -56,71 +107,55 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 10px 10px;
-    background-color: white;
-    height: 35vh;
-    box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.75);
+    background: white;
+    background-size: cover;
+    // background: #6c648b;
+    height: 100vh;
+    transition: background 2s;
 
-    h2 {
-      color: #a9a9a9;
-      margin: 20px;
-      letter-spacing: 3px;
-      font-size: 2em;
-      user-select: none;
+    .WhiteBlock {
+      background: white;
+      width: 100%;
+      height: 20vh;
     }
 
-    p {
-      margin: 10px;
-    }
+    .LandingAbout {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
 
-    .ImageHolder {
-      padding: 13%;
-      // min-width: 290px;
-      // min-height: 290px;
-      background-color: black;
-      border-style: solid;
-      border-color: black;
-      border-width: 1px;
-      border-radius: 50%;
-      background-image: url('../../../images/mackenzie.png');
-      background-size: cover;
-      position: absolute;
-      right: 10%;
-      bottom: 3%;
-      -webkit-animation: colourChange 1s;
-      -moz-animation: colourChange 1s;
-      -o-animation: colourChange 1s;
-      -ms-transition: colourChange 1s;
-      animation: colourChange 1s;
-    }
-
-    .Slider {
-      h2 {
-        color: black;
-        margin: 10px;
-        -webkit-animation: fadein 1s;
-        -moz-animation: fadein 1s;
-        -o-animation: fadein 1s;
-        -ms-transition: fadein 1s;
-        animation: fadein 1s;
+      .DeerImage {
+        height: 80vh;
+        max-height: 100%;
+        width: auto;
       }
 
       p {
-        width: 100%;
-        overflow: hidden;
-        -webkit-animation: slide-left 3s, fadein 5s;
-        -moz-animation: slide-left 3s, fadein 5s;
-        -o-animation: slide-left 3s, fadein 5s;
-        -ms-transition: slide-left 3s, fadein 5s;
-        animation: slide-left 3s, fadein 5s;
+        font-size: 4em;
+        margin: 0;
+        margin-right: 60px;
+        padding: 0;
+        width: 80%;
+
+        -webkit-user-select: none; /* Chrome all / Safari all */
+        -moz-user-select: none; /* Firefox all */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none;
       }
     }
+
+    // &:hover {
+    //   background: #bf0053;
+    // }
   }
 
   .AboutSection {
     @extend .TopicSection;
     height: 65vh;
-    background-image: url('../../../images/AboutImage.jpg');
+    background: white;
+    //background-image: url('../../../images/AboutImage.jpg');
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -131,7 +166,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background-image: url('../../../images/ProjectsImage.jpg');
+    background: white;
+    //background-image: url('../../../images/ProjectsImage.jpg');
     background-size: cover;
 
     .ProjectContainer {
@@ -157,7 +193,7 @@
   }
 
   to {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 
@@ -166,15 +202,6 @@
     opacity: 0;
   }
   to {
-    opacity: 0.8;
-  }
-}
-
-@keyframes colourChange {
-  from {
-    background-color: white;
-  }
-  to {
-    background-color: black;
+    opacity: 1;
   }
 }
