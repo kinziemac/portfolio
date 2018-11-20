@@ -18,7 +18,7 @@ export default class LandingHeader extends Component {
   }
 
   render() {
-    const sections = ['HOME', 'PROJECTS', 'EXTRA'];
+    const sections = ['HOME', 'ABOUT', 'PROJECTS'];
     const { selectedHeading } = this.state;
     return (
       <div id="LandingHeader">
