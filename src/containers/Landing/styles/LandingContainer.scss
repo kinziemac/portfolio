@@ -1,174 +1,20 @@
-@import 'src/colours';
+@import "src/colours";
 
 #LandingContainer {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  -ms-transition: fadein 2s;
-  animation: fadein 2s;
-
-  h1 {
-    margin: 0;
-  }
-
-  .TopicSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    color: white;
-    background-color: #23395b;
-    height: 100vh;
-
-    h2 {
-      color: white;
-      margin: 20px;
-      letter-spacing: 3px;
-      font-size: 2em;
-      user-select: none;
-    }
-  }
-
-  .SplashLanding {
-    @extend .TopicSection;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    background-image: url('../../../images/SplashImage.jpg');
-    background-size: cover;
-    color: black;
-    height: 100vh;
-
-    p {
-      font-size: 4em;
-      margin: 0;
-      margin-left: 20px;
-      padding: 0;
-      width: 80%;
-      overflow: hidden;
-      -webkit-animation: slide-left 3s, fadein 3s;
-      -moz-animation: slide-left 3s, fadein 3s;
-      -o-animation: slide-left 3s, fadein 3s;
-      -ms-transition: slide-left 3s, fadein 3s;
-      animation: slide-left 3s, fadein 3s;
-      -webkit-user-select: none; /* Chrome all / Safari all */
-      -moz-user-select: none; /* Firefox all */
-      -ms-user-select: none; /* IE 10+ */
-      user-select: none;
-    }
-  }
-
-  .FadeToWhiteBottom {
-    height: 20vh;
-    margin-top: 20vh;
-    width: 100%;
-    background: -moz-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-  }
-
-  .FadeToWhiteTop {
-    height: 50vh;
-    width: 100%;
-    background: -moz-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(108, 100, 139, 1) 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(108, 100, 139, 1) 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(108, 100, 139, 1) 100%
-    );
-  }
 
   .LandingSeperation {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background: white;
-    background-size: cover;
-    // background: #6c648b;
-    height: 100vh;
-    transition: background 2s;
-
-    .WhiteBlock {
-      background: white;
-      width: 100%;
-      height: 20vh;
-    }
-
-    .LandingAbout {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      .DeerImage {
-        height: 80vh;
-        max-height: 100%;
-        width: auto;
-      }
-
-      p {
-        font-size: 4em;
-        margin: 0;
-        margin-right: 60px;
-        padding: 0;
-        width: 80%;
-
-        -webkit-user-select: none; /* Chrome all / Safari all */
-        -moz-user-select: none; /* Firefox all */
-        -ms-user-select: none; /* IE 10+ */
-        user-select: none;
-      }
-    }
-
-    // &:hover {
-    //   background: #bf0053;
-    // }
-  }
-
-  .AboutSection {
-    @extend .TopicSection;
-    height: 65vh;
-    background: white;
-    //background-image: url('../../../images/AboutImage.jpg');
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    height: 20vh;
   }
 
   .ProjectsSection {
-    @extend .TopicSection;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background: white;
-    //background-image: url('../../../images/ProjectsImage.jpg');
     background-size: cover;
+    height: 100vh;
 
     .ProjectContainer {
       display: flex;
@@ -178,12 +24,6 @@
       width: 100%;
       height: 100%;
     }
-  }
-
-  .FooterSection {
-    @extend .LandingSeperation;
-    height: 20vh;
-    background-color: #282c34;
   }
 }
 

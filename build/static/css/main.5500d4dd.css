@@ -1,0 +1,244 @@
+@import url(https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed);@import url(https://fonts.googleapis.com/css?family=Lato);body{margin:0;padding:0;font-family:sans-serif}#LandingHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000080;
+  position: fixed;
+  top: 0;
+  height: 12vh;
+  width: 100%;
+  padding-right: 100px;
+  z-index: 5; }
+  #LandingHeader #LandingHeaderInner {
+    height: 100%;
+    weight: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #LandingHeader #LandingHeaderInner .SectionHeading {
+      padding: 10px 20px;
+      margin: 0 15px; }
+      #LandingHeader #LandingHeaderInner .SectionHeading p {
+        color: black;
+        margin: 0;
+        margin-bottom: 3px;
+        font-size: 1em;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-animation: fadein 5;
+        -moz-animation: fadein 5;
+        -o-animation: fadein 5;
+        -ms-transition: fadein 5;
+        animation: fadein 5; }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -5px;
+          left: 0;
+          background-color: black;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+    #LandingHeader #LandingHeaderInner .Selected p {
+      color: #2f4f4f; }
+
+@keyframes fadein {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+.Project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  height: 45vh;
+  width: 35vh;
+  background-color: #282c34;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+  .Project:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.32); }
+  .Project p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    margin: 0; }
+  .Project .ProjectImage {
+    background-color: white;
+    background-size: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 85%;
+    margin-bottom: 8px; }
+  .Project .netflixextension {
+    background-image: url(/static/media/FlixFinder.f56d8e1c.png); }
+  .Project .ClarityHierarchy {
+    background-image: url(/static/media/ClarityHierarchy.873c3b8a.png); }
+  .Project .sti-imaging {
+    background-image: url(/static/media/STI-Imaging.4176dd41.png);
+    background-position: right -11px top; }
+#LandingContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -ms-transition: fadein 2s;
+  animation: fadein 2s; }
+  #LandingContainer h1 {
+    margin: 0; }
+  #LandingContainer .TopicSection, #LandingContainer .SplashLanding, #LandingContainer .AboutSection, #LandingContainer .ProjectsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #23395b;
+    height: 100vh; }
+    #LandingContainer .TopicSection h2, #LandingContainer .SplashLanding h2, #LandingContainer .AboutSection h2, #LandingContainer .ProjectsSection h2 {
+      color: white;
+      margin: 20px;
+      letter-spacing: 3px;
+      font-size: 2em;
+      user-select: none; }
+  #LandingContainer .SplashLanding {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url(/static/media/SplashImage.2ff39334.jpg);
+    background-size: cover;
+    color: black;
+    height: 100vh; }
+    #LandingContainer .SplashLanding p {
+      font-size: 4em;
+      margin: 0;
+      margin-left: 20px;
+      padding: 0;
+      width: 80%;
+      overflow: hidden;
+      -webkit-animation: slide-left 3s, fadein 3s;
+      -moz-animation: slide-left 3s, fadein 3s;
+      -o-animation: slide-left 3s, fadein 3s;
+      -ms-transition: slide-left 3s, fadein 3s;
+      animation: slide-left 3s, fadein 3s;
+      -webkit-user-select: none;
+      /* Chrome all / Safari all */
+      -moz-user-select: none;
+      /* Firefox all */
+      -ms-user-select: none;
+      /* IE 10+ */
+      user-select: none; }
+  #LandingContainer .FadeToWhiteBottom {
+    height: 20vh;
+    margin-top: 20vh;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%); }
+  #LandingContainer .FadeToWhiteTop {
+    height: 50vh;
+    width: 100%;
+    background: -moz-linear-gradient(top, white 0%, #6c648b 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, white 0%, #6c648b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, white 0%, #6c648b 100%); }
+  #LandingContainer .LandingSeperation, #LandingContainer .FooterSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: white;
+    background-size: cover;
+    height: 100vh;
+    transition: background 2s; }
+    #LandingContainer .LandingSeperation .WhiteBlock, #LandingContainer .FooterSection .WhiteBlock {
+      background: white;
+      width: 100%;
+      height: 20vh; }
+    #LandingContainer .LandingSeperation .LandingAbout, #LandingContainer .FooterSection .LandingAbout {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #LandingContainer .LandingSeperation .LandingAbout .DeerImage, #LandingContainer .FooterSection .LandingAbout .DeerImage {
+        height: 80vh;
+        max-height: 100%;
+        width: auto; }
+      #LandingContainer .LandingSeperation .LandingAbout p, #LandingContainer .FooterSection .LandingAbout p {
+        font-size: 4em;
+        margin: 0;
+        margin-right: 60px;
+        padding: 0;
+        width: 80%;
+        -webkit-user-select: none;
+        /* Chrome all / Safari all */
+        -moz-user-select: none;
+        /* Firefox all */
+        -ms-user-select: none;
+        /* IE 10+ */
+        user-select: none; }
+  #LandingContainer .AboutSection {
+    height: 65vh;
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  #LandingContainer .ProjectsSection {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: white;
+    background-size: cover; }
+    #LandingContainer .ProjectsSection .ProjectContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 100%; }
+  #LandingContainer .FooterSection {
+    height: 20vh;
+    background-color: #282c34; }
+
+@keyframes slide-left {
+  from {
+    margin-left: 20%; }
+  to {
+    margin-left: 20px; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.App{text-align:center;background-color:#000}.App-logo{-webkit-animation:App-logo-spin infinite 20s linear;animation:App-logo-spin infinite 20s linear;height:80px}.App-header{background-color:#000;height:150px;padding:20px;color:#fff}.App-intro{font-size:large}@-webkit-keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.5500d4dd.css.map*/

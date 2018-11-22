@@ -1,0 +1,42 @@
+.SplashLanding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  .SplashText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10%;
+
+    p {
+      margin: 0;
+      letter-spacing: 3px;
+      color: white;
+      font-size: 2.4em;
+      font-weight: 900;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .NameText {
+      display: flex;
+      flex-direction: row;
+
+      .Name {
+        color: #fc2344;
+        padding-left: 10px;
+      }
+    }
+
+    .SmallerText {
+      padding-left: 20px;
+      font-size: 1.7em;
+      // color: #fc2344;
+    }
+  }
+}

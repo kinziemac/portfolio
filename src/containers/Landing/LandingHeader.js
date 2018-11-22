@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { func } from 'prop-types';
-import './styles/LandingHeader.scss';
+import React, { Component } from "react";
+import { func } from "prop-types";
+import "./styles/LandingHeader.scss";
 
 export default class LandingHeader extends Component {
   static propTypes = {
@@ -8,8 +8,26 @@ export default class LandingHeader extends Component {
   };
 
   state = {
-    selectedHeading: 'HOME'
+    selectedHeading: "Home"
   };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleColorChange.bind(this));
+  }
+
+  handleColorChange() {
+    const header = document.getElementById("LandingHeaderInner");
+    const ele = document.getElementById("AboutInner");
+    const totalHeight = ele.offsetHeight + ele.offsetTop;
+    if (
+      window.pageYOffset > ele.offsetTop - 35 &&
+      window.pageYOffset < totalHeight - 35
+    ) {
+      header.style.color = "#041534";
+    } else {
+      header.style.color = "white";
+    }
+  }
 
   handleSelectSection(section) {
     this.setState({ selectedHeading: section }, () => {
@@ -18,8 +36,7 @@ export default class LandingHeader extends Component {
   }
 
   render() {
-    const sections = ['HOME', 'PROJECTS', 'EXTRA'];
-    const { selectedHeading } = this.state;
+    const sections = ["Home", "About", "Projects"];
     return (
       <div id="LandingHeader">
         <div id="LandingHeaderInner">
@@ -28,7 +45,8 @@ export default class LandingHeader extends Component {
               <div
                 className="SectionHeading"
                 key={section}
-                onClick={this.handleSelectSection.bind(this, section)}>
+                onClick={this.handleSelectSection.bind(this, section)}
+              >
                 <p>
                   <b>{section}</b>
                 </p>
