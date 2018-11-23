@@ -1,0 +1,174 @@
+@import url(https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed);@import url(https://fonts.googleapis.com/css?family=Inconsolata);@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Raleway);body{margin:0;padding:0;font-family:sans-serif}#LandingHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 12vh;
+  width: 100%;
+  padding-right: 100px;
+  z-index: 5; }
+  #LandingHeader #LandingHeaderInner {
+    height: 100%;
+    weight: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    #LandingHeader #LandingHeaderInner .SectionHeading {
+      padding: 10px 20px;
+      margin: 0 15px; }
+      #LandingHeader #LandingHeaderInner .SectionHeading p {
+        margin: 0;
+        margin-bottom: 3px;
+        font-size: 1em;
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
+        letter-spacing: 3px;
+        font-weight: bold;
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-animation: fadein 5;
+        -moz-animation: fadein 5;
+        -o-animation: fadein 5;
+        -ms-transition: fadein 5;
+        animation: fadein 5; }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -5px;
+          left: 0;
+          background-color: white;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+    #LandingHeader #LandingHeaderInner .Selected p {
+      color: #2f4f4f; }
+
+@keyframes fadein {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+.SplashLanding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; }
+  .SplashLanding .SplashText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10%; }
+    .SplashLanding .SplashText p {
+      margin: 0;
+      letter-spacing: 3px;
+      color: white;
+      font-size: 2.4em;
+      font-weight: 900;
+      font-family: "Raleway", sans-serif; }
+    .SplashLanding .SplashText .NameText {
+      display: flex;
+      flex-direction: row; }
+      .SplashLanding .SplashText .NameText .Name {
+        color: #fc2344;
+        padding-left: 10px; }
+    .SplashLanding .SplashText .SmallerText {
+      padding-left: 20px;
+      font-size: 1.7em; }
+.AboutLanding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; }
+  .AboutLanding p {
+    margin: 0; }
+  .AboutLanding #AboutInner {
+    height: 85vh;
+    max-height: 90vh;
+    width: 90vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px; }
+    .AboutLanding #AboutInner #AboutTitle {
+      font-size: 2.5em;
+      color: black;
+      font-weight: 900;
+      font-family: "Raleway", sans-serif; }
+.ProjectWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 50vh;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer; }
+  .ProjectWidget p {
+    margin: 0;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em; }
+.ProjectsSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw; }
+  .ProjectsSection #ProjectTitle {
+    font-size: 2.5em;
+    color: white;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    padding: 4% 0 0 4%;
+    margin: 0; }
+  .ProjectsSection #ProjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    overflow-x: scroll;
+    height: 100vh;
+    max-width: 100vw; }
+    .ProjectsSection #ProjectContainer #WidgetContainer {
+      padding-left: 30%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 200vw; }
+#Canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #041534;
+  z-index: -1;
+  transition: 0.5s all; }
+#LandingContainer {
+  display: flex;
+  flex-direction: column; }
+  #LandingContainer .LandingSeperation {
+    height: 30vh; }
+.App{text-align:center;p{font-family:Inconsolata,monospace;letter-spacing:3px}}.App-logo{-webkit-animation:App-logo-spin infinite 20s linear;animation:App-logo-spin infinite 20s linear;height:80px}.App-header{height:150px;padding:20px;color:#fff}.App-intro{font-size:large}@-webkit-keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.c803a9e6.css.map*/
