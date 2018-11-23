@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import LandingHeader from "./LandingHeader";
-import ProjectWidget from "./ProjectWidget";
 import SplashLanding from "./SplashLanding";
 import AboutLanding from "./AboutLanding";
+import ProjectLanding from "./ProjectLanding";
 import Canvas from "../Canvas/Canvas";
 import "./styles/LandingContainer.scss";
 
@@ -20,7 +20,10 @@ export default class LandingContainer extends Component {
       // elem.style.background = "#870433";
       // elem.style.background = "#42c793";
       elem.style.background = "#3C1CFE";
-    } else if (window.pageYOffset >= totalSplash && window.pageYOffset < 1000) {
+    } else if (
+      window.pageYOffset >= totalSplash - 100 &&
+      window.pageYOffset < 1000
+    ) {
       elem.style.background = "#377EFF";
     } else if (window.pageYOffset < totalSplash) {
       elem.style.background = "#041534";
@@ -36,12 +39,6 @@ export default class LandingContainer extends Component {
   }
 
   render() {
-    const projects = [
-      { id: 1, name: "FlixFinder", platform: "Chrome Extension" },
-      { id: 2, name: "STI-Imaging", platform: "Java Application" },
-      { id: 3, name: "Clarity", platform: "iPhone App" }
-    ];
-
     return (
       <div id="LandingContainer">
         <LandingHeader onScroll={this.handleScroll.bind(this)} />
@@ -50,13 +47,8 @@ export default class LandingContainer extends Component {
         <div className="LandingSeperation" />
         <AboutLanding />
         <div className="LandingSeperation" />
-        <div className="ProjectsSection" id="Projects">
-          <div className="ProjectContainer">
-            {projects.map(project => {
-              return <ProjectWidget project={project} key={project.id} />;
-            })}
-          </div>
-        </div>
+        <ProjectLanding />
+        <div className="LandingSeperation" />
       </div>
     );
   }
