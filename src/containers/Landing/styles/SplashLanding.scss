@@ -2,41 +2,57 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 
-  .SplashText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 10%;
+  #SplashCenterPiece {
+    background: black;
+    width: 40vw;
+    height: 85vh;
+    border-radius: 1%;
+    animation: fade-in 2s;
+    padding: 2px 2px 0 2px;
+    
+    #CenterPieceBorder {
+      width: 100%;
+      height: 100%;
+      background: #191919;
+      border-top-left-radius: 1%;
+      border-top-right-radius: 1%;
 
-    p {
-      margin: 0;
-      letter-spacing: 3px;
-      color: white;
-      font-size: 2.4em;
-      font-weight: 900;
-      font-family: "Raleway", sans-serif;
-    }
+      #WelcomeText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
 
-    .NameText {
-      display: flex;
-      flex-direction: row;
+        p {
+          margin: 0;
+          color: white;
+          font-size: 3.0em;
+          font-family: 'Major Mono Display', monospace;
+        }
 
-      .Name {
-        color: #fc2344;
-        padding-left: 10px;
+        .portfolioText {
+          // color: #fc2344;
+          color: #cb8b5a;
+        }
+
       }
     }
-
-    .SmallerText {
-      padding-left: 20px;
-      font-size: 1.7em;
-      // color: #fc2344;
-    }
   }
+
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
 }

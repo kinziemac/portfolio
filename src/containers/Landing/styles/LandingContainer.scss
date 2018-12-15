@@ -3,8 +3,28 @@
 #LandingContainer {
   display: flex;
   flex-direction: column;
-
+  
   .LandingSeperation {
     height: 30vh;
+    background: white;
   }
 }
+
+
+// @-moz-keyframes myfirst /* Firefox */ {
+//   0% {
+//     background: radial-gradient(ellipse at center,black 0,#1d1d1b 82%);
+//   }
+//   100% {
+//     background: radial-gradient(ellipse at center,#cb8b5a 0,#1d1d1b 82%);
+//   }
+// }
+
+// @-webkit-keyframes myfirst /* Safari and Chrome */ {
+//   0% {
+//     background: radial-gradient(ellipse at center,black 0,#1d1d1b 82%);
+//   }
+//   100% {
+//     background:radial-gradient(ellipse at center,#cb8b5a 0,#1d1d1b 82%);
+//   }
+// }

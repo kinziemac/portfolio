@@ -1,0 +1,41 @@
+#TransitionBackground {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+    transition: 0.5s all;
+
+    #LightLayer {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -2;
+        background: radial-gradient(ellipse at center, #cb8b5a 0,#1d1d1b 82%);
+        animation: colorSwitch 12s infinite;
+        -moz-animation: colorSwitch 12s infinite; /* Firefox */
+        -webkit-animation: colorSwitch 12s infinite; /* Safari and Chrome */
+
+    }
+
+    #DarkLayer {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -3;
+        background: radial-gradient(ellipse at center,#282624 0,#1d1d1b 82%);
+    
+    }
+}
+
+@keyframes colorSwitch /* Firefox */ {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

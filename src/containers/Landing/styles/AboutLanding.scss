@@ -11,12 +11,49 @@
   }
 
   #AboutInner {
-    height: 85vh;
-    max-height: 90vh;
-    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+
+    #AboutContent {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: center;
+
+      #PersonalImageContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+
+        #PersonalImage {
+          height: 60vh;
+          width: 60vh;
+          border-radius: 50%;
+        }
+      }
+
+      #PersonalDescription {
+        width: 100%;
+
+        .personalQuote {
+          border-left: 5px solid black;
+          padding-left: 20px;
+          font-size: 1.3em;
+        }
+      }
+      
+    }
 
     #AboutTitle {
       font-size: 2.5em;
