@@ -34,24 +34,32 @@ export default class LandingContainer extends Component {
   // }
 
   handleScroll(section) {
-    const body = document.getElementById(section); //.getBoundingClientRect();
+    let scrollArea = "end"
+    if (section === "Home") {
+      scrollArea = "start"
+    } else if (section === "Projects") {
+      section = "ProjectSep"
+      scrollArea = "start"
+      
+    }
+
+    const body = document.getElementById(section);
+
     if (body) {
-      body.scrollIntoView({ block: "end", behavior: "smooth" });
+      body.scrollIntoView({ block: scrollArea, behavior: "smooth" });
     }
   }
 
   render() {
     return (
       <div id="LandingContainer">
-        {/* <LandingHeader onScroll={this.handleScroll.bind(this)} /> */}
+        <LandingHeader onScroll={this.handleScroll.bind(this)} />
         <TransitionBackground />
         <Canvas />
-        <SplashLanding />
-        <div className="LandingSeperation" />
+        <SplashLanding onClick={this.handleScroll} />
         <AboutLanding />
-        <div className="LandingSeperation" />
+        <div className="LandingSeperation" id="ProjectSep"/>
         <ProjectLanding />
-        <div className="LandingSeperation" />
       </div>
     );
   }

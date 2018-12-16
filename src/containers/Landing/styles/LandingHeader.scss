@@ -1,41 +1,48 @@
 #LandingHeader {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   color: white;
   position: fixed;
+  background: black;
   top: 0;
-  height: 12vh;
+  height: 7vh;
   width: 100%;
   padding-right: 100px;
   z-index: 5;
+  box-shadow: 1px 1px 10px 1px #797777;
+  opacity: 0;
+  transition: ease 0.2s;
 
   #LandingHeaderInner {
     height: 100%;
     weight: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    color: white;
+    padding-right: 15px;
 
     .SectionHeading {
-      padding: 10px 20px;
+      padding: 10px 15px;
       margin: 0 15px;
 
       p {
         margin: 0;
         margin-bottom: 3px;
-        font-size: 1em;
-        font-family: "Raleway", sans-serif;
-        font-weight: 800;
+        font-size: 0.9em;
+        font-family: 'Major Mono Display', monospace;
         letter-spacing: 3px;
-        font-weight: bold;
-
+        font-weight: 900;
         position: relative;
         text-decoration: none;
         cursor: pointer;
 
         &:hover {
+          transition: ease 0.7s;
+          color: #6249fe;
+          // color: #7660fe;
+          // color: #3C1CFE;
+
           &:before {
             visibility: visible;
             -webkit-transform: scaleX(1);
@@ -50,7 +57,10 @@
           height: 1px;
           bottom: -5px;
           left: 0;
-          background-color: white;
+          color: #6249fe;
+          // color: #7660fe;
+          background-color: #6249fe;
+          // background-color: #3C1CFE;
           visibility: hidden;
           -webkit-transform: scaleX(0);
           transform: scaleX(0);

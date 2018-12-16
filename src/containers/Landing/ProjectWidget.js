@@ -17,6 +17,7 @@ export default class ProjectWidget extends Component {
     return (
       <div className="ProjectWidget">
         <p>Widget</p>
+        <p>{projectName}</p>
       </div>
     );
   }

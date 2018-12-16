@@ -16,15 +16,26 @@ export default class LandingHeader extends Component {
   }
 
   handleColorChange() {
-    const header = document.getElementById("LandingHeaderInner");
-    const ele = document.getElementById("AboutInner");
+    const header = document.getElementById("LandingHeader");
+    const ele = document.getElementById("About");
     const totalHeight = ele.offsetHeight + ele.offsetTop;
-    if (
-      window.pageYOffset > ele.offsetTop - 35 &&
-      window.pageYOffset < totalHeight - 35
-    ) {
-      header.style.color = "#041534";
+
+    //making header appear
+    if (window.pageYOffset > ele.offsetTop - 35) {
+      header.style.opacity = "1";
     } else {
+      header.style.opacity = "0";
+    }
+
+    //making box shadow appear
+    if (window.pageYOffset > totalHeight - 35) {
+      header.style.boxShadow = "0px 0px";
+      header.style.background = "white";
+      header.style.color = "black";
+
+    } else if (window.pageYOffset > ele.offsetTop - 35) {
+      header.style.boxShadow = "1px 1px 10px 1px #797777";
+      header.style.background = "black";
       header.style.color = "white";
     }
   }
@@ -36,7 +47,7 @@ export default class LandingHeader extends Component {
   }
 
   render() {
-    const sections = ["Home", "About", "Projects"];
+    const sections = ["Home", "About", "Experience", "Projects"];
     return (
       <div id="LandingHeader">
         <div id="LandingHeaderInner">

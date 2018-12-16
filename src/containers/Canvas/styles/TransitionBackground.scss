@@ -10,7 +10,8 @@
         width: 100%;
         position: fixed;
         z-index: -2;
-        background: radial-gradient(ellipse at center, #cb8b5a 0,#1d1d1b 82%);
+        background: radial-gradient(ellipse at center, #3C1CFE 0,#1d1d1b 82%);
+        // background: radial-gradient(ellipse at center, #cb8b5a 0,#1d1d1b 82%);
         animation: colorSwitch 12s infinite;
         -moz-animation: colorSwitch 12s infinite; /* Firefox */
         -webkit-animation: colorSwitch 12s infinite; /* Safari and Chrome */
@@ -22,7 +23,7 @@
         width: 100%;
         position: fixed;
         z-index: -3;
-        background: radial-gradient(ellipse at center,#282624 0,#1d1d1b 82%);
+        background: radial-gradient(ellipse at center,#111110 0,#1d1d1b 82%);
     
     }
 }

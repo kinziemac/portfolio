@@ -1,5 +1,6 @@
 .ProjectWidget {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 30vw;
@@ -14,7 +15,7 @@
   p {
     margin: 0;
     font-weight: 900;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Major Mono Display', monospace;
     font-size: 1.5em;
   }
 
