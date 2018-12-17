@@ -46,6 +46,7 @@ npm manifest:
       "fs-extra": "3.0.1",
       "html-webpack-plugin": "2.29.0",
       "jest": "20.0.4",
+      "jquery": "^3.3.1",
       "object-assign": "4.1.1",
       "postcss-flexbugs-fixes": "3.2.0",
       "postcss-loader": "2.0.6",
@@ -145,6 +146,14 @@ Lockfile:
   "@mdi/font@^3.2.89":
     version "3.2.89"
     resolved "https://registry.yarnpkg.com/@mdi/font/-/font-3.2.89.tgz#91790717881c8839729286e516436e7b9f3d96ea"
+  
+  "@mdi/js@^3.2.89":
+    version "3.2.89"
+    resolved "https://registry.yarnpkg.com/@mdi/js/-/js-3.2.89.tgz#71310ff0890cd161ef56407120dda36dbcf1a427"
+  
+  "@mdi/react@^1.1.0":
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/@mdi/react/-/react-1.1.0.tgz#22b014e40152adbe0d7d36631fc9979854603c7a"
   
   abab@^1.0.3:
     version "1.0.4"

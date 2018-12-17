@@ -1,6 +1,6 @@
 #LandingHeader {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   color: white;
   position: fixed;
@@ -13,6 +13,30 @@
   box-shadow: 1px 1px 10px 1px #797777;
   opacity: 0;
   transition: ease 0.2s;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #LandingResume {
+    margin-left: 30px;
+    font-size: 0.9em;
+    font-family: 'Major Mono Display', monospace;
+    letter-spacing: 2px;
+    font-weight: 900;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 2px 4px 4px;
+    transition: ease 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: #6249fe;
+      // background: #141414;
+    }
+
+  }
 
   #LandingHeaderInner {
     height: 100%;
@@ -31,7 +55,7 @@
         margin-bottom: 3px;
         font-size: 0.9em;
         font-family: 'Major Mono Display', monospace;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         font-weight: 900;
         position: relative;
         text-decoration: none;

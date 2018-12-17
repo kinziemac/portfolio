@@ -17,26 +17,30 @@ export default class LandingHeader extends Component {
 
   handleColorChange() {
     const header = document.getElementById("LandingHeader");
-    const ele = document.getElementById("About");
-    const totalHeight = ele.offsetHeight + ele.offsetTop;
+    const about = document.getElementById("About");
+    const projects = document.getElementById("ProjectSep");
+    const resume = document.getElementById("ResumeDownload");
 
     //making header appear
-    if (window.pageYOffset > ele.offsetTop - 35) {
+    if (window.pageYOffset > about.offsetTop - 5) {
       header.style.opacity = "1";
     } else {
       header.style.opacity = "0";
     }
 
-    //making box shadow appear
-    if (window.pageYOffset > totalHeight - 35) {
+    //Projects Section
+    if (window.pageYOffset > projects.offsetTop - 35) {
       header.style.boxShadow = "0px 0px";
       header.style.background = "white";
       header.style.color = "black";
+      resume.style.color = "black";
 
-    } else if (window.pageYOffset > ele.offsetTop - 35) {
+    //About Section
+    } else if (window.pageYOffset > about.offsetTop - 35) {
       header.style.boxShadow = "1px 1px 10px 1px #797777";
       header.style.background = "black";
       header.style.color = "white";
+      resume.style.color = "white";
     }
   }
 
@@ -50,6 +54,11 @@ export default class LandingHeader extends Component {
     const sections = ["Home", "About", "Experience", "Projects"];
     return (
       <div id="LandingHeader">
+        <a href="files/Mackenzie-Higa-Resume.pdf" id="ResumeDownload" download>
+          <div id="LandingResume">
+            resuMe
+          </div>
+        </a>
         <div id="LandingHeaderInner">
           {sections.map(section => {
             return (

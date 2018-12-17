@@ -1,0 +1,48 @@
+.UnderlineText {
+
+    p {
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        color: #3C1CFE;
+        display:inline-block;
+
+        &:hover {
+        transition: ease 0.7s;
+        // color: gray;
+        // color: #7660fe;
+        color: #3C1CFE;
+
+        &:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+        }
+
+        &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        color: #6249fe;
+        // color: #7660fe;
+        background-color: #6249fe;
+        // background-color: #3C1CFE;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        }
+
+    -webkit-animation: fadein 5;
+    -moz-animation: fadein 5;
+    -o-animation: fadein 5;
+    -ms-transition: fadein 5;
+    animation: fadein 5;
+    }
+
+}
