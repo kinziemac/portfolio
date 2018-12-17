@@ -18,6 +18,7 @@ export default class LandingHeader extends Component {
   handleColorChange() {
     const header = document.getElementById("LandingHeader");
     const about = document.getElementById("About");
+    const experience = document.getElementById("ExperienceSep");
     const projects = document.getElementById("ProjectSep");
     const resume = document.getElementById("ResumeDownload");
 
@@ -30,6 +31,13 @@ export default class LandingHeader extends Component {
 
     //Projects Section
     if (window.pageYOffset > projects.offsetTop - 35) {
+      header.style.boxShadow = "0px 0px";
+      header.style.background = "white";
+      header.style.color = "black";
+      resume.style.color = "black";
+
+    //Experience Section
+    } else if (window.pageYOffset > experience.offsetTop - 35) {
       header.style.boxShadow = "0px 0px";
       header.style.background = "white";
       header.style.color = "black";

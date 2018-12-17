@@ -7,6 +7,7 @@ import "./styles/AboutLanding.scss";
 export default class AboutLanding extends Component {
   render() {
     const usText = "While I’ve lived in Vancouver for almost my entire life and consider myself a true Canadian, I was born in San Francisco, CA. so working in the US is not a problem for me. "
+    
     return (
       <div className="AboutLanding" id="About">
         <div id="AboutCenterPiece"/>

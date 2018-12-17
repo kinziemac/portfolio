@@ -1,3 +1,5 @@
+@import "src/colours";
+
 .ProjectsSection {
   display: flex;
   justify-content: flex-start;
@@ -12,7 +14,7 @@
     font-size: 2.8em;
     color: white;
     font-weight: 900;
-    font-family: 'Major Mono Display', monospace;
+    font-family: $MAIN_FONT;
     padding: 8vh 0 0 8vh;
     margin: 0;
   }

@@ -1,3 +1,5 @@
+@import "src/colours";
+
 .ProjectWidget {
   display: flex;
   flex-direction: column;
@@ -15,7 +17,7 @@
   p {
     margin: 0;
     font-weight: 900;
-    font-family: 'Major Mono Display', monospace;
+    font-family: $MAIN_FONT;
     font-size: 1.5em;
   }
 

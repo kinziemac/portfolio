@@ -1,3 +1,5 @@
+@import "src/colours";
+
 .AboutLanding {
   display: flex;
   flex-direction: column;
@@ -54,7 +56,7 @@
 
         #AboutTitle {
           font-size: 2.8em;
-          font-family: 'Major Mono Display', monospace;
+          font-family: $MAIN_FONT;
           margin: 20px 0 30px 0;
         }
 

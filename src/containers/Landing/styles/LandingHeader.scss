@@ -54,7 +54,7 @@
   #LandingResume {
     margin-left: 30px;
     font-size: 0.9em;
-    font-family: 'Major Mono Display', monospace;
+    font-family: $MAIN_FONT;
     letter-spacing: 2px;
     font-weight: 900;
     border-style: solid;
@@ -86,7 +86,7 @@
         margin: 0;
         margin-bottom: 3px;
         font-size: 0.9em;
-        font-family: 'Major Mono Display', monospace;
+        font-family: $MAIN_FONT;
         letter-spacing: 2px;
         font-weight: 900;
         position: relative;

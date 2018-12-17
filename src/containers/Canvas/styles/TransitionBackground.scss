@@ -1,3 +1,5 @@
+@import "src/colours";
+
 #TransitionBackground {
     width: 100%;
     height: 100%;
@@ -10,7 +12,8 @@
         width: 100%;
         position: fixed;
         z-index: -2;
-        background: radial-gradient(ellipse at center, #3C1CFE 0,#1d1d1b 82%);
+        // background: radial-gradient(ellipse at center, white 0,#1d1d1b 78%);
+        background: radial-gradient(ellipse at center, $MAIN 0,#1d1d1b 82%);
         // background: radial-gradient(ellipse at center, #cb8b5a 0,#1d1d1b 82%);
         animation: colorSwitch 12s infinite;
         -moz-animation: colorSwitch 12s infinite; /* Firefox */

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LandingHeader from "./LandingHeader";
 import SplashLanding from "./SplashLanding";
 import AboutLanding from "./About/AboutLanding";
+import ExperienceContainer from "./Experience/ExperienceContainer";
 import ProjectLanding from "./ProjectLanding";
 import Canvas from "../Canvas/Canvas";
 import TransitionBackground from "../Canvas/TransitionBackground";
@@ -11,6 +12,8 @@ export default class LandingContainer extends Component {
   handleScroll(section) {
     if (section === "Projects") {
       section = "ProjectSep"
+    } else if (section === "Experience") {
+      section = "ExperienceSep"
     }
 
     const body = document.getElementById(section);
@@ -31,7 +34,9 @@ export default class LandingContainer extends Component {
         <SplashLanding onClick={this.handleScroll} />
         <AboutLanding />
         <div className="LandingSeperation"/>
-        <div className="LandingSeperation" style={{background: "black", height: "7vh"}} id="ProjectSep"/>
+        <div className="LandingSeperation" style={{background: "black", height: "7vh"}} id="ExperienceSep"/>
+        <ExperienceContainer />
+        <div className="LandingSeperation" style={{background: "white", height: "7vh"}} id="ProjectSep"/>
         <ProjectLanding />
       </div>
     );
