@@ -5,7 +5,7 @@ function UnderlineWords({ word, fontFamily }) {
 
     return (
       <span className="UnderlineText">
-        <p>
+        <p style={{margin: "0px"}}>
             {word}
         </p>
       </span>

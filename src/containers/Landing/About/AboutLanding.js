@@ -21,24 +21,29 @@ export default class AboutLanding extends Component {
                 <AboutIcons />
               </div>
               <p>
-                {introText}
+                Hello! My name is Mackenzie Higa and I’m a software engineer and 
+                web developer from Vancouver, BC. Currently, I'm in my final year 
+                at <a href="https://www.sfu.ca/computing.html" target="_blank" rel="noopener noreferrer">
+                <UnderlineWords word="Simon Fraser University" />
+                </a> to complete my Bachelor's of Computer Science.
               </p> 
               <p>
                 My focus is directed primarily on frontend development, but I also have a passion for 
                 operating systems, backend web development, and iOS development. 
-                I also dabble in writing technical articles that can be found on my <a href="https://medium.com/@mackenziehiga" target="_blank" rel="noopener noreferrer">
+                I also dabble in writing technical articles that can be 
+                found on my <a href="https://medium.com/@mackenziehiga" target="_blank" rel="noopener noreferrer">
                   <UnderlineWords word="Medium" />
                 </a> profile.
               </p>
               <p>
                 {usText}
               </p>
-              <p>
+              <p className="ExtraInfo">
                 Outside of the computer science world, some of my other interests include:
                 {
                   interests.map(interest => {
                     return (
-                      <div>
+                      <div key={interest}>
                       <Icon path={mdiTriangle}
                     size={0.5}
                     rotate={90}

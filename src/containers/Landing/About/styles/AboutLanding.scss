@@ -31,7 +31,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-content: center;
-      margin: 50px 80px;
+      margin: 30px 80px;
 
       #PersonalImageContainer {
         display: flex;
@@ -50,7 +50,6 @@
 
       #PersonalDescription {
         padding: 0 40px;
-        max-width: 60vw;
         font-size: 1.1em;
 
         #AboutTitle {
@@ -65,13 +64,13 @@
           font-family: 'IBM Plex Sans', sans-serif;
         }
       }
-      
     }
 
     #TitleContainer {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
+      margin-bottom: 20px;
 
       #AboutTitle {
         display: inline-block;
@@ -82,7 +81,48 @@
       }
     }
   }
+
+  @media (max-width: 850px) {
+    #AboutCenterPiece {
+      width: 70vw;
+    }
+
+    #AboutInner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #AboutContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        width: 80vw;
+
+        #PersonalImageContainer {
+          display: none;
+        }
+    
+        #PersonalDescription {
+          width: 100%;
+          padding: 0;
+
+          #TitleContainer {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .ExtraInfo {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
+
+
 
 @keyframes fadein {
   from {

@@ -52,6 +52,8 @@ export default class LandingHeader extends Component {
 
   render() {
     const sections = ["Home", "About", "Experience", "Projects"];
+    const windowWidth = window.innerWidth
+
     return (
       <div id="LandingHeader">
         <a href="files/Mackenzie-Higa-Resume.pdf" id="ResumeDownload" download>
@@ -59,21 +61,26 @@ export default class LandingHeader extends Component {
             resuMe
           </div>
         </a>
-        <div id="LandingHeaderInner">
-          {sections.map(section => {
-            return (
-              <div
-                className="SectionHeading"
-                key={section}
-                onClick={this.handleSelectSection.bind(this, section)}
-              >
-                <p>
-                  <b>{section}</b>
-                </p>
-              </div>
-            );
-          })}
-        </div>
+        {
+          windowWidth > 700 ?
+          <div id="LandingHeaderInner">
+            {sections.map(section => {
+              return (
+                <div
+                  className="SectionHeading"
+                  key={section}
+                  onClick={this.handleSelectSection.bind(this, section)}
+                >
+                  <p>
+                    <b>{section}</b>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+          :
+          <none />
+        }
       </div>
     );
   }

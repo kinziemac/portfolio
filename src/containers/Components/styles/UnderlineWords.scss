@@ -6,18 +6,17 @@
         cursor: pointer;
         color: #3C1CFE;
         display:inline-block;
+        margin: 0;
 
         &:hover {
-        transition: ease 0.7s;
-        // color: gray;
-        // color: #7660fe;
-        color: #3C1CFE;
+            transition: ease 0.7s;
+            color: #3C1CFE;
 
-        &:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
+            &:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
         }
 
         &:before {
