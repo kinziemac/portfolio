@@ -1,3 +1,5 @@
+@import "src/colours";
+
 #LandingHeader {
   display: flex;
   justify-content: space-between;
@@ -35,13 +37,13 @@
 
     &:hover {
       .line {
-        background: #6249fe;
+        background: $LIGHT_MAIN;
       }
     }
 
     &:active {
       .line {
-        background: #6249fe;
+        background: $LIGHT_MAIN;
       }
     }
 
@@ -62,7 +64,7 @@
     cursor: pointer;
 
     &:hover {
-      color: #6249fe;
+      color: $LIGHT_MAIN;
       // background: #141414;
     }
 
@@ -93,7 +95,7 @@
 
         &:hover {
           transition: ease 0.7s;
-          color: #6249fe;
+          color: $LIGHT_MAIN;
           // color: #7660fe;
           // color: #3C1CFE;
 
@@ -111,9 +113,9 @@
           height: 1px;
           bottom: -5px;
           left: 0;
-          color: #6249fe;
+          color: $LIGHT_MAIN;
           // color: #7660fe;
-          background-color: #6249fe;
+          background-color: $LIGHT_MAIN;
           // background-color: #3C1CFE;
           visibility: hidden;
           -webkit-transform: scaleX(0);

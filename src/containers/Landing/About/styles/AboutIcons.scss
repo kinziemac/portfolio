@@ -1,6 +1,16 @@
+@import "src/colours";
+
 #AboutIconsContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
+
+    svg.Icons {
+        &:hover
+            path {
+                fill: $MAIN;
+            }
+        }
+      
 }

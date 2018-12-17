@@ -1,3 +1,5 @@
+@import "src/colours";
+
 .SplashLanding {
   display: flex;
   flex-direction: row;
@@ -32,7 +34,7 @@
       .portfolioText {
         // color: #fc2344;
         // color: #cb8b5a;
-        color: #3C1CFE;
+        color: $MAIN;
       }
     }
 
@@ -54,7 +56,7 @@
 
         &:hover {
           // color: white;
-          color: #3C1CFE;
+          color: $MAIN;
           transition: ease 0.3s;
         }
       }
