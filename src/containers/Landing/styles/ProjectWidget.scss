@@ -7,14 +7,13 @@
   align-items: center;
   width: 30vw;
   height: 50vh;
-  background: white;
+  background: black;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
-  // animation: grow 1.2 ;
-  
 
   p {
+    color: white;
     margin: 0;
     font-weight: 900;
     font-family: $MAIN_FONT;

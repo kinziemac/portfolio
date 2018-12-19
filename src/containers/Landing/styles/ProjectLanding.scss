@@ -1,22 +1,24 @@
 @import "src/colours";
 
 .ProjectsSection {
+  padding-top: 7%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   background-size: cover;
-  background: black;
+  background: white;
   height: 100vh;
   max-width: 100vw;
 
   #ProjectTitle {
     font-size: 2.8em;
-    color: white;
+    color: black;
     font-weight: 900;
     font-family: $MAIN_FONT;
-    padding: 8vh 0 0 8vh;
+    padding-left: 10%;
     margin: 0;
+    margin-bottom: 5%;
   }
 
   #ProjectContainer {
@@ -26,7 +28,6 @@
     flex-direction: column;
     background-size: cover;
     overflow-x: scroll;
-    height: 100vh;
     max-width: 100vw;
 
     #WidgetContainer {

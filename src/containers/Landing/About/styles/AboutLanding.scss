@@ -11,12 +11,6 @@
     margin: 0;
   }
 
-  #AboutCenterPiece {
-    width: 40vw;
-    height: 7vh;
-    background: #070707;
-  }
-
   #AboutInner {
     display: flex;
     flex-direction: column;
@@ -33,7 +27,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-content: center;
-      margin: 30px 80px;
+      margin: 7% 80px;
 
       #PersonalImageContainer {
         display: flex;
@@ -54,32 +48,26 @@
         padding: 0 40px;
         font-size: 1.1em;
 
-        #AboutTitle {
-          font-size: 2.8em;
-          font-family: $MAIN_FONT;
-          margin: 20px 0 30px 0;
+        #TitleContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+    
+          #AboutTitle {
+            display: inline-block;
+            font-size: 2.8em;
+            color: black;
+            font-family: $MAIN_FONT;
+            margin: 0 0 30px 0;
+          }
         }
 
         p {
           margin-bottom: 15px;
           padding: 0;
-          font-family: 'IBM Plex Sans', sans-serif;
+          font-family: $SECONDARY_FONT;
         }
-      }
-    }
-
-    #TitleContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-
-      #AboutTitle {
-        display: inline-block;
-        font-size: 2.5em;
-        color: black;
-        font-weight: 900;
-        font-family: "Raleway", sans-serif;
       }
     }
   }

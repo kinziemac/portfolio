@@ -4,50 +4,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: black;
   position: fixed;
-  background: black;
+  background: white;
   top: 0;
   height: 7vh;
   min-height: 42px;
   width: 100%;
   padding-right: 100px;
   z-index: 5;
-  box-shadow: 1px 1px 10px 1px #797777;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #d2d2d2;
   opacity: 0;
   transition: ease 0.2s;
 
   a {
-    color: white;
+    color: black;
     text-decoration: none;
-  }
-
-  #MenuIcon {
-    width: 20px;
-    margin-right: 30px;
-    margin-top: 3px;
-
-    .line {
-      background: white;
-      height: 2px;
-      display: block;
-      margin-bottom: 3px;
-      transition: ease 0.3s;
-    }
-
-    &:hover {
-      .line {
-        background: $LIGHT_MAIN;
-      }
-    }
-
-    &:active {
-      .line {
-        background: $LIGHT_MAIN;
-      }
-    }
-
-
   }
 
 
@@ -55,6 +29,7 @@
     margin-left: 30px;
     font-size: 0.9em;
     font-family: $MAIN_FONT;
+    color: black;
     letter-spacing: 2px;
     font-weight: 900;
     border-style: solid;
@@ -64,15 +39,13 @@
     cursor: pointer;
 
     &:hover {
-      color: $LIGHT_MAIN;
-      // background: #141414;
+      color: $MAIN;
     }
 
   }
 
   #LandingHeaderInner {
     height: 100%;
-    weight: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -95,9 +68,7 @@
 
         &:hover {
           transition: ease 0.7s;
-          color: $LIGHT_MAIN;
-          // color: #7660fe;
-          // color: #3C1CFE;
+          color: $MAIN;
 
           &:before {
             visibility: visible;
@@ -114,9 +85,7 @@
           bottom: -5px;
           left: 0;
           color: $LIGHT_MAIN;
-          // color: #7660fe;
           background-color: $LIGHT_MAIN;
-          // background-color: #3C1CFE;
           visibility: hidden;
           -webkit-transform: scaleX(0);
           transform: scaleX(0);

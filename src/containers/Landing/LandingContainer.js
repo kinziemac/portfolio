@@ -10,11 +10,6 @@ import "./styles/LandingContainer.scss";
 
 export default class LandingContainer extends Component {
   handleScroll(section) {
-    if (section === "Projects") {
-      section = "ProjectSep"
-    } else if (section === "Experience") {
-      section = "ExperienceSep"
-    }
 
     const body = document.getElementById(section);
     if (body) {
@@ -34,9 +29,7 @@ export default class LandingContainer extends Component {
         <SplashLanding onClick={this.handleScroll} />
         <AboutLanding />
         <div className="LandingSeperation"/>
-        <div className="LandingSeperation" style={{background: "black", height: "7vh"}} id="ExperienceSep"/>
         <ExperienceContainer />
-        <div className="LandingSeperation" style={{background: "white", height: "7vh"}} id="ProjectSep"/>
         <ProjectLanding />
       </div>
     );

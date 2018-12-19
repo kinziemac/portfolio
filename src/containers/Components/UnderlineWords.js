@@ -1,8 +1,7 @@
 import React from "react";
 import "./styles/UnderlineWords.scss";
 
-function UnderlineWords({ word, fontFamily }) {
-
+export default function UnderlineWords({ word, fontFamily }) {
     return (
       <span className="UnderlineText">
         <p style={{margin: "0px"}}>
@@ -12,5 +11,3 @@ function UnderlineWords({ word, fontFamily }) {
     );
     
 }
-
-export default UnderlineWords
