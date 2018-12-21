@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./styles/SplashLanding.scss";
 
 export default class SplashLanding extends Component {
-
   handleSelectSection = () => {
       this.props.onClick("About");
   }

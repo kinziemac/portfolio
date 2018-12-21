@@ -1,0 +1,479 @@
+@import url(https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed);@import url(https://fonts.googleapis.com/css?family=Inconsolata);@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Raleway);@import url(https://fonts.googleapis.com/css?family=Major+Mono+Display);body{margin:0;padding:0;font-family:sans-serif}#LandingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  position: fixed;
+  background: white;
+  top: 0;
+  height: 7vh;
+  min-height: 42px;
+  width: 100%;
+  padding-right: 100px;
+  z-index: 5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #d2d2d2;
+  opacity: 0;
+  transition: ease 0.2s; }
+  #LandingHeader a {
+    color: black;
+    text-decoration: none; }
+  #LandingHeader #LandingResume {
+    margin-left: 30px;
+    font-size: 0.9em;
+    font-family: "Major Mono Display", monospace;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 900;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 2px 4px 4px;
+    transition: ease 0.3s;
+    cursor: pointer; }
+    #LandingHeader #LandingResume:hover {
+      color: #3C1CFE; }
+  #LandingHeader #LandingHeaderInner {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px; }
+    #LandingHeader #LandingHeaderInner .SectionHeading {
+      padding: 10px 15px;
+      margin: 0 15px; }
+      #LandingHeader #LandingHeaderInner .SectionHeading p {
+        margin: 0;
+        margin-bottom: 3px;
+        font-size: 0.9em;
+        font-family: "Major Mono Display", monospace;
+        letter-spacing: 2px;
+        font-weight: 900;
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-animation: fadein 5;
+        -moz-animation: fadein 5;
+        -o-animation: fadein 5;
+        -ms-transition: fadein 5;
+        animation: fadein 5; }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:hover {
+          transition: ease 0.7s;
+          color: #3C1CFE; }
+          #LandingHeader #LandingHeaderInner .SectionHeading p:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+        #LandingHeader #LandingHeaderInner .SectionHeading p:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -5px;
+          left: 0;
+          color: #6249fe;
+          background-color: #6249fe;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+    #LandingHeader #LandingHeaderInner .Selected p {
+      color: #2f4f4f; }
+
+@keyframes fadein {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+.SplashLanding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 115vh; }
+  .SplashLanding #CenterPieceBorder {
+    background: #070707;
+    animation: fade-in 3s;
+    width: 40vw;
+    height: 85vh;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px; }
+    .SplashLanding #CenterPieceBorder #WelcomeText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10vh;
+      animation: fade-in 1.5s; }
+      .SplashLanding #CenterPieceBorder #WelcomeText p {
+        margin: 0;
+        color: white;
+        font-size: 2.8em;
+        font-family: "Major Mono Display", monospace; }
+      .SplashLanding #CenterPieceBorder #WelcomeText .portfolioText {
+        color: #3C1CFE; }
+    .SplashLanding #CenterPieceBorder #ScrollDown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20vh;
+      width: 100%;
+      animation: MoveUpDown 1.5s linear infinite; }
+      .SplashLanding #CenterPieceBorder #ScrollDown p {
+        margin: 0;
+        color: gray;
+        font-size: 2.2em;
+        font-family: "Major Mono Display", monospace;
+        cursor: pointer;
+        transition: ease 0.3s; }
+        .SplashLanding #CenterPieceBorder #ScrollDown p:hover {
+          color: #3C1CFE;
+          transition: ease 0.3s; }
+
+@media (max-width: 850px) {
+  .SplashLanding #CenterPieceBorder {
+    width: 70vw;
+    height: 75vh; }
+    .SplashLanding #CenterPieceBorder #WelcomeText p {
+      font-size: 2.8em; } }
+
+@media (max-width: 480px) {
+  .SplashLanding #CenterPieceBorder #WelcomeText p {
+    font-size: 2.4em; } }
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    margin-top: 20vh; }
+  50% {
+    margin-top: 18vh; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#AboutIconsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%; }
+  #AboutIconsContainer svg.Icons:hover path {
+    fill: #3C1CFE; }
+#InterestContainer .AboutBullet {
+  display: inline-block;
+  width: 50%;
+  margin: 0; }
+  #InterestContainer .AboutBullet p {
+    margin: 0; }
+.UnderlineText p {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  color: #3C1CFE;
+  display: inline-block;
+  margin: 0;
+  -webkit-animation: fadein 5;
+  -moz-animation: fadein 5;
+  -o-animation: fadein 5;
+  -ms-transition: fadein 5;
+  animation: fadein 5; }
+  .UnderlineText p:hover {
+    transition: ease 0.7s;
+    color: #3C1CFE; }
+    .UnderlineText p:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+  .UnderlineText p:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    color: #6249fe;
+    background-color: #6249fe;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+.AboutLanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .AboutLanding p {
+    margin: 0; }
+  .AboutLanding #AboutInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    background-color: white; }
+    .AboutLanding #AboutInner #AboutContent {
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: center;
+      margin: 7% 80px; }
+      .AboutLanding #AboutInner #AboutContent #PersonalImageContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 20px; }
+        .AboutLanding #AboutInner #AboutContent #PersonalImageContainer #PersonalImage {
+          margin-top: 10vh;
+          width: 30vw;
+          height: auto;
+          border-radius: 50%; }
+      .AboutLanding #AboutInner #AboutContent #PersonalDescription {
+        padding: 0 40px;
+        font-size: 1.1em; }
+        .AboutLanding #AboutInner #AboutContent #PersonalDescription #TitleContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px; }
+          .AboutLanding #AboutInner #AboutContent #PersonalDescription #TitleContainer #AboutTitle {
+            display: inline-block;
+            font-size: 2.8em;
+            color: black;
+            font-family: "Major Mono Display", monospace;
+            margin: 0 0 30px 0; }
+        .AboutLanding #AboutInner #AboutContent #PersonalDescription p {
+          margin-bottom: 15px;
+          padding: 0;
+          font-family: "Raleway", sans-serif; }
+  @media (max-width: 850px) {
+    .AboutLanding #AboutCenterPiece {
+      width: 70vw; }
+    .AboutLanding #AboutInner {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .AboutLanding #AboutInner #AboutContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        width: 80vw; }
+        .AboutLanding #AboutInner #AboutContent #PersonalImageContainer {
+          display: none; }
+        .AboutLanding #AboutInner #AboutContent #PersonalDescription {
+          width: 100%;
+          padding: 0; }
+          .AboutLanding #AboutInner #AboutContent #PersonalDescription #TitleContainer {
+            display: flex;
+            flex-direction: column; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+.ExperienceContainer {
+  background: white;
+  padding: 7% 7% 5% 7%; }
+  .ExperienceContainer #ExperienceTitle {
+    color: black;
+    font-size: 2.8em;
+    margin: 0;
+    font-family: "Major Mono Display", monospace;
+    padding-left: 3%; }
+  .ExperienceContainer #ExperienceInner {
+    background: white;
+    padding: 5% 5%;
+    padding-bottom: 0;
+    height: 78%; }
+    .ExperienceContainer #ExperienceInner #WorkContainer {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      border-left: 1px;
+      border-left-style: solid;
+      border-left-color: #D5D5D5;
+      height: 100%; }
+      .ExperienceContainer #ExperienceInner #WorkContainer #JobContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding-right: 10px; }
+        .ExperienceContainer #ExperienceInner #WorkContainer #JobContainer p {
+          cursor: pointer;
+          margin: 0;
+          font-family: "Major Mono Display", monospace;
+          font-size: 0.8em;
+          padding: 10px 20px;
+          transition: ease 0.5s; }
+          .ExperienceContainer #ExperienceInner #WorkContainer #JobContainer p:hover {
+            transition: ease 0.5s;
+            background: #e0dddd; }
+.ExperienceWidget {
+  background: white;
+  margin: 0 5%;
+  min-width: 500px;
+  padding-bottom: 3%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #D5D5D5; }
+  .ExperienceWidget .WidgetHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%; }
+    .ExperienceWidget .WidgetHeader .WidgetTitle, .ExperienceWidget .WidgetHeader .WidgetDate {
+      display: flex;
+      display: inline-block;
+      color: black;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.2em;
+      margin: 0;
+      font-weight: 700; }
+    .ExperienceWidget .WidgetHeader .WidgetDate {
+      font-size: 1.0em;
+      font-weight: 100;
+      color: #555555; }
+  .ExperienceWidget .WidgetTextContainer {
+    max-width: 70vw; }
+    .ExperienceWidget .WidgetTextContainer .WidgetDescription {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+      padding-left: 5px;
+      padding-bottom: 8px; }
+      .ExperienceWidget .WidgetTextContainer .WidgetDescription p {
+        font-weight: 500;
+        font-family: "Raleway", sans-serif;
+        margin: 0;
+        margin-left: 10px; }
+    .ExperienceWidget .WidgetTextContainer .WidgetImageContainer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 10px;
+      padding-top: 5px; }
+      .ExperienceWidget .WidgetTextContainer .WidgetImageContainer .WidgetImage {
+        height: 80px; }
+.ProjectWidget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 50vh;
+  background: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s; }
+  .ProjectWidget p {
+    color: white;
+    margin: 0;
+    font-weight: 900;
+    font-family: "Major Mono Display", monospace;
+    font-size: 1.5em; }
+  .ProjectWidget:hover {
+    width: 45vw; }
+
+@keyframes grow {
+  100% {
+    width: 40vw; } }
+.ProjectsSection {
+  padding-top: 7%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background: white;
+  height: 100vh;
+  max-width: 100vw; }
+  .ProjectsSection #ProjectTitle {
+    font-size: 2.8em;
+    color: black;
+    font-weight: 900;
+    font-family: "Major Mono Display", monospace;
+    padding-left: 10%;
+    margin: 0;
+    margin-bottom: 5%; }
+  .ProjectsSection #ProjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    overflow-x: scroll;
+    max-width: 100vw; }
+    .ProjectsSection #ProjectContainer #WidgetContainer {
+      padding-left: 30%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 200vw; }
+#Canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  transition: 0.5s all;
+  animation: fade-in 12s; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#TransitionBackground {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -2;
+  transition: 0.5s all; }
+  #TransitionBackground #LightLayer {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -2;
+    background: radial-gradient(ellipse at center, #3C1CFE 0, #1d1d1b 82%);
+    animation: colorSwitch 12s infinite;
+    -moz-animation: colorSwitch 12s infinite;
+    /* Firefox */
+    -webkit-animation: colorSwitch 12s infinite;
+    /* Safari and Chrome */ }
+  #TransitionBackground #DarkLayer {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -3;
+    background: radial-gradient(ellipse at center, #111110 0, #1d1d1b 82%); }
+
+@keyframes colorSwitch /* Firefox */ {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+#LandingContainer {
+  display: flex;
+  flex-direction: column; }
+  #LandingContainer .LandingSeperation {
+    height: 12vh;
+    background: white; }
+.App{text-align:center;p{font-family:Inconsolata,monospace;letter-spacing:3px}}.App-logo{-webkit-animation:App-logo-spin infinite 20s linear;animation:App-logo-spin infinite 20s linear;height:80px}.App-header{height:150px;padding:20px;color:#fff}.App-intro{font-size:large}@-webkit-keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.984fac00.css.map*/

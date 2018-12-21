@@ -1,0 +1,80 @@
+@import "src/colours";
+
+.ProjectWidget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: 0.5s;
+  width: 80%;
+  background: white;
+  border-style: solid;
+  border-color: $GRAY;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 3%;
+
+  .WidgetExpanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s;
+    width: 100%;
+
+    .ProjectMain {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 4px 0 0 7px;
+      
+
+      .ProjectImageContainer {
+        width: 375px;
+
+        .ProjectImage {
+          width: 100%;
+          
+        }
+      }
+
+      .ProjectDesc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+
+        .ProjectHeader {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+
+          .ProjectName {
+            color: black;
+            font-family: $SECONDARY_FONT;
+            font-size: 1.6em;
+            font-weight: 100;
+            margin: 0;
+            margin-left: 10px;
+          }
+
+          .ProjectDate {
+            font-family: $SECONDARY_FONT;
+            margin: 0;
+            font-size: 1.0em;
+            font-weight: 100;
+            color: $DARK_GRAY;
+          }
+
+        }
+      }
+    
+      
+    }
+  }
+}
+
+

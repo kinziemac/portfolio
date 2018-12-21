@@ -18,10 +18,7 @@ export default class LandingHeader extends Component {
   handleColorChange() {
     const header = document.getElementById("LandingHeader");
     const about = document.getElementById("About");
-    // const experience = document.getElementById("ExperienceSep");
-    // const projects = document.getElementById("ProjectSep");
-    // const resume = document.getElementById("ResumeDownload");
-
+    
     //making header appear
     if (window.pageYOffset > about.offsetTop - 5) {
       header.style.opacity = "1";

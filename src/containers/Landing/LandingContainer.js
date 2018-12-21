@@ -3,7 +3,7 @@ import LandingHeader from "./LandingHeader";
 import SplashLanding from "./SplashLanding";
 import AboutLanding from "./About/AboutLanding";
 import ExperienceContainer from "./Experience/ExperienceContainer";
-import ProjectLanding from "./ProjectLanding";
+import ProjectLanding from "./Projects/ProjectLanding";
 import Canvas from "../Canvas/Canvas";
 import TransitionBackground from "../Canvas/TransitionBackground";
 import "./styles/LandingContainer.scss";
