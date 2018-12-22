@@ -35,7 +35,7 @@ export default class LandingHeader extends Component {
   }
 
   render() {
-    const sections = ["Home", "About", "Experience", "Projects"];
+    const sections = ["Home", "About", "eXperience", "projects"];
     const windowWidth = window.innerWidth
 
     return (

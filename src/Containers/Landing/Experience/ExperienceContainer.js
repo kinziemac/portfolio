@@ -44,7 +44,7 @@ export default class ExperienceContainer extends Component {
     ]
 
     return (
-      <div className="ExperienceContainer" id="Experience">
+      <div className="ExperienceContainer" id="eXperience">
       <p id="ExperienceTitle">eXperience</p>
       <div id="ExperienceInner">
         <div id="WorkContainer">
