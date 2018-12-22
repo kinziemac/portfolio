@@ -10,7 +10,7 @@ export default class ProjectLanding extends Component {
         date: "Dec 2018", 
         desc: "Portfolio created in React JS to display experience, work, and general information about me.",
         platform: "React Appliaction", 
-        link: "mackenziehiga.com",
+        link: "https://github.com/kinziemac/portfolio",
         image: "Portfolio.png",
         techs: [
           {
