@@ -10,7 +10,7 @@ export default class ProjectLanding extends Component {
         date: "Dec 2018", 
         desc: "Mock BlockChain Miner created in Go - Blocks are mined concurrently using go-routines (This repo is private due to academic guidelines but access can be granted if an email is sent to mhiga@sfu.ca).",
         platform: "GoLang", 
-        link: "https://github.com/kinziemac/blockchain383",
+        link: "https://github.com/kinziemac/goBlockchain",
         image: "blockchain.png",
         techs: [
           {
