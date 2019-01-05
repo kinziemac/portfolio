@@ -6,6 +6,19 @@ export default class ProjectLanding extends Component {
   
   render() {
     const projects = [
+      { name: "Mock BlockChain Miner", 
+        date: "Dec 2018", 
+        desc: "Mock BlockChain Miner created in Go - Blocks are mined concurrently using go-routines (This repo is private due to academic guidelines but access can be granted if an email is sent to mhiga@sfu.ca).",
+        platform: "GoLang", 
+        link: "https://github.com/kinziemac/blockchain383",
+        image: "blockchain.png",
+        techs: [
+          {
+            name: "GoLang",
+            image: "react.png"
+          }
+        ]
+      },
       { name: "Portfolio Website", 
         date: "Dec 2018", 
         desc: "Portfolio created in React JS to display experience, work, and general information about me.",
