@@ -13,7 +13,7 @@ export default class SplashLanding extends Component {
           <div id="WelcomeText">
             <p>Welcome</p>
             <p>to my</p>
-            <p className="portfolioText">Portfolio</p>
+            <p className="portfolioText">portfolio</p>
           </div>
           <div id="ScrollDown" onClick={this.handleSelectSection}>
             <p>V</p>

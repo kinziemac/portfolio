@@ -61,9 +61,6 @@ export default class ProjectLanding extends Component {
             name: "Java",
             image: "java.svg"
           }
-          // "JavaFX", 
-          
-          // "OpenCV"
         ]
       },
       { name: "FlixFinder",
