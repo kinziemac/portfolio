@@ -13,19 +13,8 @@ export default function ProjectWidget({ project }) {
             <div className="ProjectDesc">
               <div className="ProjectHeader">
                 <p className="ProjectName">{project.name}</p>
-                <p className="ProjectDate">{project.date}</p>
               </div>
               <p className="ProjectText">{project.desc}</p>
-              <div className="WidgetTechContainer">
-                <p className="ProjectTechTitle">Technologies</p>
-                {
-                  project.techs.map(tech => {
-                    return (
-                        <p>{tech.name}</p>
-                    )
-                  })
-                }
-              </div>
             </div>
           </div>
         </div>

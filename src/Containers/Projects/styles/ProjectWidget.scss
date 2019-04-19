@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   transition: 0.5s;
-  width: 80%;
+  width: 90%;
   background: white;
   border-style: solid;
   border-color: $GRAY;
@@ -17,6 +17,7 @@
 
   &:hover {
     background: $LIGHT_GRAY;
+    transform: scale(0.99);
   }
 
   a {
@@ -59,7 +60,7 @@
         .ProjectHeader {
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
           width: 98%;
 
@@ -77,18 +78,11 @@
             transition: ease 0.5s;
           }
 
-          .ProjectDate {
-            font-family: $SECONDARY_FONT;
-            margin: 0;
-            font-size: 1.0em;
-            font-weight: 100;
-            color: $DARK_GRAY;
-          }
         }
 
         .ProjectText {
           display: inline-block;
-          font-size: 1.1em;
+          font-size: 0.9em;
           margin: 0 20px;
           font-family: $SECONDARY_FONT;
         }
@@ -115,8 +109,6 @@
             margin: 0;
             margin-left: 10px;
           }
-
-          
 
         }
       }  

@@ -1,17 +1,22 @@
-@import url("https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed");
+/* @import url("https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Roboto+Condensed"); */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 
-.App {
-  text-align: center;
+#App {
+  background: black;
 
-  p {
-    font-family: Inconsolata, monospace;
-    letter-spacing: 3px;
+  #AppContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
   }
+  
 }
 
 .App-logo {

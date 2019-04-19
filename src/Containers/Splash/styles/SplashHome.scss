@@ -1,0 +1,40 @@
+@import "src/colours";
+
+#SplashHomeContainer {
+    background-image: url(./../../../images/second-half-camera-black.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 50vw;
+    animation: fade-in 1.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      margin: 0;
+      color: white;
+      font-weight: 700;
+      font-family: $MAIN_FONT;
+      font-size: $TITLE_FONT_SIZE;
+    }
+
+    #SplashHomeSubtext{
+      font-weight: 100;
+      font-size: 1em;
+      margin-top: 10px;
+      padding-bottom: 10%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+    
+  }

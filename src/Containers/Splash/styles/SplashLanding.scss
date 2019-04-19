@@ -1,0 +1,74 @@
+@import "src/colours";
+
+.SplashLanding {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: black;
+  
+  width: 50vw;
+  height: 100vh;
+  animation: fade-in 1.5s;
+
+  #SplashInnerContainer {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat';
+    background-image: url(./../../../images/camera-black.jpg);
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // animation: fade-in 1.8s;
+
+    #SplashTextContainer {
+      margin-top: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      // animation: fade-in 3s;
+      // animation-delay: 1s;
+
+      .NameTitleText {
+        margin: 0;
+        // color: #FB003E;
+        color: white;
+        font-weight: 800;
+        font-size: $TITLE_FONT_SIZE;
+      }
+
+      .SubTitleText {
+        margin-left: 3px;
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: 1em;
+        color: white;
+      }
+    }
+  }
+
+}
+
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
+}

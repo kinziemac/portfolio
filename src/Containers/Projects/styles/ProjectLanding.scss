@@ -1,0 +1,64 @@
+@import "src/colours";
+
+.ProjectsSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+
+  width: 50vw;
+  height: 100vh;
+  overflow-y: scroll;
+  animation: fade-in 1.5s;
+
+  #ProjectTitle {
+    font-size: $TITLE_FONT_SIZE;
+    font-family: $MAIN_FONT;
+    font-weight: $TITLE_FONT_WEIGHT;
+    color: black;
+    margin: 5% 0;
+    
+  }
+
+  #ProjectImageHeader {
+    width: 90%;
+    min-height: 40%;
+    background-image: url(./../../../images/work-white-background.jpg);
+    background-size: cover;
+  }
+
+  #ProjectTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    margin: 15px 0;
+    margin-bottom: 7%;
+    font-size: $SECONDARY_FONT_SIZE;
+
+    p {
+      display: flex;
+      justify-content: center;
+      font-family: $SECONDARY_FONT;
+      margin: 0;
+    }
+  }
+
+  #ProjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    width: 100%;
+
+    #WidgetContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+}

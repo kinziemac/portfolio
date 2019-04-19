@@ -4,24 +4,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
   position: fixed;
-  background: white;
+  background: transparent;
   top: 0;
   height: 7vh;
   min-height: 42px;
-  width: 100%;
-  padding-right: 100px;
+  width: 50vw;
   z-index: 5;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #d2d2d2;
-  box-shadow: rgba(0,0,0,0.08) 0 0 5px 1px;
-  opacity: 0;
+  // border-bottom-width: 1px;
+  // border-bottom-style: solid;
+  // border-bottom-color: #d2d2d2;
+  // box-shadow: rgba(0,0,0,0.08) 0 0 5px 1px;
   transition: ease 0.2s;
+  animation: fade-in 1.5s;
 
   a {
-    color: black;
     text-decoration: none;
   }
 
@@ -30,53 +27,51 @@
     margin-left: 30px;
     font-size: 0.9em;
     font-family: $MAIN_FONT;
-    color: black;
-    letter-spacing: 2px;
     font-weight: 900;
-    border-style: solid;
-    border-width: 1px;
     padding: 4px 2px 4px 4px;
     transition: ease 0.3s;
     cursor: pointer;
 
-    &:hover {
-      color: $MAIN;
-    }
+    // &:hover {
+    //   color: $MAIN;
+    // }
 
   }
 
   #LandingHeaderInner {
     height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 15px;
+
 
     .SectionHeading {
       padding: 10px 15px;
       margin: 0 15px;
 
       p {
+        color: white;
         margin: 0;
         margin-bottom: 3px;
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-family: $MAIN_FONT;
-        letter-spacing: 2px;
-        font-weight: 900;
+        letter-spacing: px;
+        font-weight: 500;
         position: relative;
         text-decoration: none;
         cursor: pointer;
 
-        &:hover {
-          transition: ease 0.7s;
-          color: $MAIN;
+        // &:hover {
+        //   transition: ease 0.7s;
+        //   color: $MAIN;
 
-          &:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-          }
-        }
+        //   &:before {
+        //     visibility: visible;
+        //     -webkit-transform: scaleX(1);
+        //     transform: scaleX(1);
+        //   }
+        // }
 
         &:before {
           content: "";

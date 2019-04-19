@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AboutIcons from "./AboutIcons"
 import AboutInterests from "./AboutInterests"
-import UnderlineWords from '../../Components/UnderlineWords.js'
+import UnderlineWords from 'Components/UnderlineWords.js'
 import "./styles/AboutLanding.scss";
 
 export default class AboutLanding extends Component {
@@ -12,11 +12,15 @@ export default class AboutLanding extends Component {
       <div className="AboutLanding" id="About">
         <div id="AboutInner">
           <div id="AboutContent">
-            <div id="PersonalDescription">
-              <div id="TitleContainer">
-                <p id="AboutTitle">about Me</p>
-                <AboutIcons />
+            <p id="AboutTitle">About Me</p>
+            <div id="AboutImageIcons">
+              <AboutIcons />
+              <div id="PersonalImageContainer">
+                <img id="PersonalImage" src="images/mackenzie.png" alt="Mackenzie" />
               </div>
+              
+            </div>
+            <div id="PersonalDescription">
               <p>
                 Hello! My name is Mackenzie Higa and I’m a software engineer and 
                 web developer from Vancouver, BC. Currently, I'm in my final year 
@@ -39,9 +43,6 @@ export default class AboutLanding extends Component {
                 {hobbyText}
                 <AboutInterests />
               </p>
-            </div>
-            <div id="PersonalImageContainer">
-              <img id="PersonalImage" src="images/mackenzie.png" alt="Mackenzie" />
             </div>
           </div>
         </div>
