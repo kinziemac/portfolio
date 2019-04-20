@@ -1,0 +1,88 @@
+@import "src/colours";
+
+.ExperienceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    width: 50vw;
+    height: 100vh;
+    overflow-y: scroll;
+    animation: $FADEIN;
+
+
+    #ExperienceTitle {
+        color: black;
+        font-size: $TITLE_FONT_SIZE;
+        margin: 5% 0;
+        font-family: $MAIN_FONT;
+        font-weight: $TITLE_FONT_WEIGHT;
+    }
+
+    #ExperienceHeaderPhoto {
+        width: 100%;
+        min-height: 40%;
+        background-image: url(./../../../images/light-work-background.jpg);
+        // background-image: url(./../../../images/projects-header-image.jpg);
+      
+        background-size: cover;
+    }
+
+    #ExperienceText {
+        display: flex;
+        padding: 3% 5%;
+        font-family: $SECONDARY_FONT;
+        font-weight: 100;
+        font-size: $SECONDARY_FONT_SIZE;
+    }
+
+    
+    #ExperienceInner {
+        background: white;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 5%;
+        margin: 0;
+        margin-bottom: 10%;
+
+        #WorkContainer {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            #JobContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-content: flex-start;
+                padding-right: 10px;
+                
+                p {
+                    cursor: pointer;
+                    margin: 0;
+                    font-family: $MAIN_FONT;
+                    // font-family: $SECONDARY_FONT;
+                    font-size: 0.8em;
+                    padding: 10px 20px;
+                    transition: ease 0.5s;
+
+                    &:hover {
+                        transition: ease 0.5s;
+                        background: #e0dddd
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  

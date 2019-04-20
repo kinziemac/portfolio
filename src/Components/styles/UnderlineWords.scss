@@ -1,0 +1,49 @@
+@import "src/colours";
+
+.UnderlineText {
+    p {
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        color: $MAIN;
+        display:inline-block;
+        margin: 0;
+
+    //     &:hover {
+    //         transition: ease 0.7s;
+    //         color: $MAIN;
+
+    //         &:before {
+    //             visibility: visible;
+    //             -webkit-transform: scaleX(1);
+    //             transform: scaleX(1);
+    //         }
+    //     }
+
+    //     &:before {
+    //     content: "";
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 2px;
+    //     bottom: -1px;
+    //     left: 0;
+    //     color: $LIGHT_MAIN;
+    //     // color: #7660fe;
+    //     background-color: $LIGHT_MAIN;
+    //     // background-color: #3C1CFE;
+    //     visibility: hidden;
+    //     -webkit-transform: scaleX(0);
+    //     transform: scaleX(0);
+    //     -webkit-transition: all 0.3s ease-in-out 0s;
+    //     transition: all 0.3s ease-in-out 0s;
+    //     }
+
+    // -webkit-animation: fadein 5;
+    // -moz-animation: fadein 5;
+    // -o-animation: fadein 5;
+    // -ms-transition: fadein 5;
+    // animation: fadein 5;
+    // }
+    }
+
+}

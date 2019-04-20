@@ -1,0 +1,20 @@
+@import url("https://fonts.google.com/specimen/Roboto+Condensed?selection.family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
+@import url("https://fonts.googleapis.com/css?family=Railway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+#App {
+  background: black;
+
+  #AppContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+  
+}

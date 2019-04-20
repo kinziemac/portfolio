@@ -1,0 +1,99 @@
+@import "src/colours";
+
+.ExperienceWidget {
+    background: white;
+    margin: 0 5%;
+    padding-top: 3%;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: $GRAY;
+    margin-bottom: 2%;
+
+    .WidgetHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        width: 100%;
+
+        .CompanyLogo {
+            width: 70px;
+            height: auto;
+        }
+
+        .WidgetJobTitleSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .WidgetTitle {
+                display: flex;
+                display: inline-block;
+                color: black;
+                font-family: $SECONDARY_FONT;
+                font-size: 1.4em;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+    
+    
+            .WidgetSubtitle {
+                display: flex;
+                display: inline-block;
+                color: black;
+                font-family: $SECONDARY_FONT;
+                font-size: 1.0em;
+                margin: 0;
+                margin-bottom: 7px;
+                
+            }
+    
+            .WidgetDate {
+                @extend .WidgetTitle;
+                font-size: 1.0em;
+                font-weight: 100;
+                color: $DARK_GRAY;
+            }
+
+        }
+
+        
+    }
+
+    .WidgetTextContainer {
+        max-width: 70vw;
+
+        .WidgetDescription{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+            padding-left: 5px;
+            padding-bottom: 8px;
+
+            p {
+                font-weight: 100;
+                font-size: 0.9em;
+                font-family: $SECONDARY_FONT;
+                margin: 0;
+                margin-left: 10px;
+            }
+
+        }
+
+        .WidgetImageContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+            padding-top: 5px;
+
+            .WidgetImage {
+                height: 80px;
+            }
+        }
+    }
+
+}
