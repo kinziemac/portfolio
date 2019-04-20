@@ -12,6 +12,7 @@
   border-color: $GRAY;
   border-width: 1px;
   border-radius: 5px;
+  
   margin-bottom: 1%;
   transition: ease 0.3s;
 
@@ -33,6 +34,7 @@
     align-items: center;
     transition: 0.5s;
     width: 100%;
+    font-weight: $SECONDARY_FONT_WEIGHT;
 
     .ProjectMain {
       display: flex;
@@ -72,8 +74,8 @@
           .ProjectName {
             color: black;
             font-family: $SECONDARY_FONT;
-            font-size: 1.6em;
-            font-weight: 100;
+            font-size: 1.4em;
+            font-weight: $SECONDARY_FONT_WEIGHT;
             margin: 10px;
             transition: ease 0.5s;
           }

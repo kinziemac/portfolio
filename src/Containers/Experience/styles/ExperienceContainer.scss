@@ -1,31 +1,55 @@
 @import "src/colours";
 
 .ExperienceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background: white;
-    padding: 7% 10%;
+    width: 50vw;
+    height: 100vh;
+    overflow-y: scroll;
+    animation: $FADEIN;
+
 
     #ExperienceTitle {
         color: black;
-        font-size: 2.8em;
-        margin: 0;
+        font-size: $TITLE_FONT_SIZE;
+        margin: 5% 0;
         font-family: $MAIN_FONT;
+        font-weight: $TITLE_FONT_WEIGHT;
     }
 
+    #ExperienceHeaderPhoto {
+        width: 100%;
+        min-height: 40%;
+        background-image: url(./../../../images/light-work-background.jpg);
+        // background-image: url(./../../../images/projects-header-image.jpg);
+      
+        background-size: cover;
+    }
+
+    #ExperienceText {
+        display: flex;
+        padding: 3% 5%;
+        font-family: $SECONDARY_FONT;
+        font-weight: 100;
+        font-size: $SECONDARY_FONT_SIZE;
+    }
+
+    
     #ExperienceInner {
         background: white;
-        padding: 5% 0;
-        padding-bottom: 0;
-        height: 78%;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 5%;
+        margin: 0;
+        margin-bottom: 10%;
 
         #WorkContainer {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
-            border-left: 1px;
-            border-left-style: solid;
-            border-left-color: $GRAY;
-            height: 100%;
-
 
             #JobContainer {
                 display: flex;
@@ -52,3 +76,13 @@
         }
     }
 }
+
+@keyframes fadein {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  

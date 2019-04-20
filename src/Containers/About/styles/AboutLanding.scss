@@ -7,7 +7,7 @@
   align-items: center;
   width: 50vw;
   height: 100vh;
-  animation: fade-in 1.5s;
+  animation: $FADEIN;
 
   p {
     margin: 0;
@@ -45,11 +45,11 @@
   
       #AboutImageIcons {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 0 30px;
-        margin: 20px 0;
+        margin: 20px 0 0 0;
   
         #AboutTitle {
           display: flex;
@@ -81,6 +81,7 @@
 
         p {
           font-size: $SECONDARY_FONT_SIZE;
+          font-weight: 100;
           margin-bottom: 15px;
           padding: 0;
           font-family: $SECONDARY_FONT;

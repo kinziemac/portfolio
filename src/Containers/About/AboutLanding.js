@@ -14,11 +14,11 @@ export default class AboutLanding extends Component {
           <div id="AboutContent">
             <p id="AboutTitle">About Me</p>
             <div id="AboutImageIcons">
-              <AboutIcons />
+              
               <div id="PersonalImageContainer">
                 <img id="PersonalImage" src="images/mackenzie.png" alt="Mackenzie" />
               </div>
-              
+              <AboutIcons />
             </div>
             <div id="PersonalDescription">
               <p>

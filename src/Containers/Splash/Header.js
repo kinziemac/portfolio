@@ -34,12 +34,9 @@ export default class LandingHeader extends Component {
   }
 
   render() {
-    // const sections = ["home", "about", "experience", "projects"];
-    const sections = ["home", "about", "projects"];
+    const sections = ["home", "about", "projects", "experience"];
+    // const sections = ["home", "about", "projects"];
     const windowWidth = window.innerWidth
-
-    var foundAbout = document.getElementById('AboutTitle')
-    console.log(foundAbout)
 
     return (
       <div id="LandingHeader">

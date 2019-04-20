@@ -2,21 +2,17 @@ import React from "react";
 import Icon from '@mdi/react';
 import { mdiTriangle} from '@mdi/js'
 import "./styles/ExperienceWidget.scss";
-import UnderlineWords from '../../Components/UnderlineWords.js'
 
-export default function ExperienceWidget({ job, finalJob }) {
+export default function ExperienceWidget({ job }) {
     return (
-        <div className="ExperienceWidget" style={finalJob ? {} : { marginBottom: "6%"} }>
+        <div className="ExperienceWidget">
             <div className="WidgetHeader">
-                <p className="WidgetTitle">
-                    {job.title} {"@ "}<a href={job.companyLink} target="_blank" rel="noopener noreferrer">
-                        <UnderlineWords word={job.company} />
-                    </a>
-                </p>
-                <p className="WidgetTitle"></p>
-                <p className="WidgetDate">
-                    {job.dates}
-                </p>
+                <div className="WidgetJobTitleSection">
+                    <p className="WidgetTitle">{job.title}</p>
+                    <p className="WidgetSubtitle">{job.company}</p>
+                    <p className="WidgetDate">{job.dates}</p>
+                </div>
+                <img className="CompanyLogo" src={require(`images/${job.companyLogo}`)} />
             </div>
             <div className="WidgetTextContainer">
                 {
@@ -37,13 +33,6 @@ export default function ExperienceWidget({ job, finalJob }) {
                     })
                 }
                 <div className="WidgetImageContainer">
-                {
-                    job.techs.map(language => {
-                        return (
-                            <img className="WidgetImage" src={`images/${language}`} alt={language} />
-                        )
-                    })
-                }
                 </div>
             </div>
         </div>
